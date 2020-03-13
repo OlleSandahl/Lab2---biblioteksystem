@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessEntity.ClassModels
 {
-    class Aktivity
+    public class Aktivity
     {
         public int AktivityId { get; set; }
         public string Name { get; set; }

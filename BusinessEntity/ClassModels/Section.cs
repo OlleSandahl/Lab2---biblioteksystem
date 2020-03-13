@@ -13,11 +13,12 @@ namespace BusinessEntity.ClassModels
 
         public Section ()
         {
-            this.Employee = new HashSet<Employee>();
-
+            this.Employees = new HashSet<Employee>();
+            this.Programs = new HashSet<Program>();
         }
 
-        public virtual ICollection<Employee> Employee { get; set; }
+        public virtual ICollection<Employee> Employees { get; set; }
+        public virtual ICollection<Program> Programs { get; set; }
 
     }
 }

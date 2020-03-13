@@ -6,13 +6,17 @@ using System.Threading.Tasks;
 
 namespace BusinessEntity.ClassModels
 {
-    class Employee : Person
+    public class Employee : Person
     {
         public string ENumber { get; set; }
 
         public Employee()
         {
-            this.
+            this.Aktivities = new HashSet<Aktivity>();
         }
+
+        public virtual Section Section { get; set; }
+        public virtual ICollection<Aktivity> Aktivities { get; set; }
+
     }
 }
