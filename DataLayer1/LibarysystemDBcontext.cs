@@ -12,7 +12,7 @@ namespace DataLayer1
 {
     public class LibarysystemDBcontext : DbContext
     {
-        public LibarysystemDBcontext() : base("Lab2 - biblioteksystem")
+        public LibarysystemDBcontext() : base("LibarysystemDBcontext")
         {
             //Database.SetInitializer(new MigrateDatabaseToLatestVersion<LibarysystemDBcontext
         }
