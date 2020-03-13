@@ -87,6 +87,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BuisnessLayer1\BuisnessLayer1.csproj">
+      <Project>{b04b3307-e2da-421c-99b2-c45b59a086ff}</Project>
+      <Name>BuisnessLayer1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessEntity\BusinessEntity.csproj">
+      <Project>{97777750-1b09-4fd9-ae8f-582dfd0309d1}</Project>
+      <Name>BusinessEntity</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
