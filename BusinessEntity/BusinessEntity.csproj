@@ -50,5 +50,15 @@
     <Compile Include="ClassModels\Section.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BuisnessLayer1\BuisnessLayer1.csproj">
+      <Project>{b04b3307-e2da-421c-99b2-c45b59a086ff}</Project>
+      <Name>BuisnessLayer1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLayer1\DataLayer1.csproj">
+      <Project>{f5a668dd-cf55-488b-8256-4fbc56eccb05}</Project>
+      <Name>DataLayer1</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
