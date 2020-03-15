@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataLayer1;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -15,8 +16,13 @@ namespace GUI
         [STAThread]
         static void Main()
         {
-            new LibarysystemDBcontext().Reset();
-                
+
+
+
+
+           
+
+
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

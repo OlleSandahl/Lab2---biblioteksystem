@@ -96,6 +96,10 @@
       <Project>{97777750-1b09-4fd9-ae8f-582dfd0309d1}</Project>
       <Name>BusinessEntity</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataLayer1\DataLayer1.csproj">
+      <Project>{F5A668DD-CF55-488B-8256-4FBC56ECCB05}</Project>
+      <Name>DataLayer1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

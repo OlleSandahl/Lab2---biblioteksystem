@@ -14,8 +14,10 @@ namespace DataLayer1
     {
         public LibarysystemDBcontext() : base("LibarysystemDBcontext")
         {
-            //Database.SetInitializer(new MigrateDatabaseToLatestVersion<LibarysystemDBcontext
+          //  Database.SetInitializer(new MigrateDatabaseToLatestVersion<LibarysystemDBcontext, Migrations.Confirguration>());
+                       
         }
+               
 
         public DbSet<Aktivity> aktivities { get; set; }
         public DbSet<Alumnus> alumni { get; set; }
@@ -24,8 +26,8 @@ namespace DataLayer1
         public DbSet<Program> programs { get; set; }
         public DbSet<Section> sections { get; set; }
         
-
-
+       
+       
     }
   
 
