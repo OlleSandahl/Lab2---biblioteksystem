@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 
 namespace DataLayer1.Repositories
 {
-    interface IRepository<TEntity>
+    public interface IRepository<TEntity>
     {
         void Add(TEntity entity);
         void AddRange(IEnumerable<TEntity> entities);

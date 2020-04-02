@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DataLayer1.Repositories
 {
-    interface IProgramRepository
+    public interface IProgramRepository
     {
         LibarysystemDBcontext LibarysystemDBcontext { get; }
 

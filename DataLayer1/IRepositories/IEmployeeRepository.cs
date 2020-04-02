@@ -2,7 +2,7 @@
 
 namespace DataLayer1.Repositories
 {
-    interface IEmployeeRepository
+    public interface IEmployeeRepository
     {
         LibarysystemDBcontext LibarysystemDBcontext { get; }
 

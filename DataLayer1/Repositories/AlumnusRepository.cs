@@ -7,7 +7,7 @@ using BusinessEntity.ClassModels;
 
 namespace DataLayer1.Repositories
 {
-    class AlumnusRepository : Repository<Alumnus>, IAlumnusRepository
+    public class AlumnusRepository : Repository<Alumnus>, IAlumnusRepository
     {
         public AlumnusRepository(LibarysystemDBcontext context) : base(context)
         {

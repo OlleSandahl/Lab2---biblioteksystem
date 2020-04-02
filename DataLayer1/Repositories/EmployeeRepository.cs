@@ -7,7 +7,7 @@ using BusinessEntity.ClassModels;
 
 namespace DataLayer1.Repositories
 {
-    class EmployeeRepository : Repository<Employee>, IEmployeeRepository
+    public class EmployeeRepository : Repository<Employee>, IEmployeeRepository
     {
         public EmployeeRepository(LibarysystemDBcontext context) : base(context)
         {

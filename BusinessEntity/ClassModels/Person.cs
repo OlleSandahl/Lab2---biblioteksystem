@@ -16,11 +16,12 @@ namespace BusinessEntity.ClassModels
         public string Username { get; set; }
         public string Password { get; set; }
 
-        public Person(string fname, string lname, string email, string password)
+        public Person(string fname, string lname, string email, string password, string username)
         {
             Fname = fname;
             Lname = lname;
             this.Email = email;
+            this.Username = username;
             this.Password = password;
         }
         public Person()
