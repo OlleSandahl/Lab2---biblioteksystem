@@ -17,11 +17,9 @@ namespace GUI
         static void Main()
         {
 
-            new LibarysystemDBcontext().Reset();
+            //new LibarysystemDBcontext().Reset();
 
-
-
-           
+                                 
 
 
 

@@ -8,7 +8,8 @@ namespace BusinessEntity.ClassModels
 {
     public class Employee : Person
     {
-        public string ENumber { get; set; }
+      
+        public string EmployeeId { get; set; }
 
         public Employee()
         {

@@ -8,7 +8,7 @@ namespace BusinessEntity.ClassModels
 {
    public abstract partial class Person
     {
-        public int PersId { get; set; }
+        public int PersonId { get; set; }
         public string PersCode { get; set; }
         public string Fname { get; set; }
         public string Lname { get; set; }
