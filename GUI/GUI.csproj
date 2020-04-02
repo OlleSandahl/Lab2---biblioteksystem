@@ -56,14 +56,134 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AdminHandleAlumni.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AdminHandleAlumni.Designer.cs">
+      <DependentUpon>AdminHandleAlumni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHandleActicites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHandleActicites.Designer.cs">
+      <DependentUpon>AdminHandleActicites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMeny.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMeny.Designer.cs">
+      <DependentUpon>AdminMeny.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminShowProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminShowProgram.Designer.cs">
+      <DependentUpon>AdminShowProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlumniActivities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlumniActivities.Designer.cs">
+      <DependentUpon>AlumniActivities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlumniMeny.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlumniMeny.Designer.cs">
+      <DependentUpon>AlumniMeny.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminShowSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminShowSection.Designer.cs">
+      <DependentUpon>AdminShowSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlumniMyActivities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlumniMyActivities.Designer.cs">
+      <DependentUpon>AlumniMyActivities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAdmin.Designer.cs">
+      <DependentUpon>CreateAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAlumni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAlumni.Designer.cs">
+      <DependentUpon>CreateAlumni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEditActivities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEditActivities.Designer.cs">
+      <DependentUpon>AdminEditActivities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogInAlumni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInAlumni.Designer.cs">
+      <DependentUpon>LogInAlumni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginAdmin.Designer.cs">
+      <DependentUpon>LoginAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartUpForm.Designer.cs">
+      <DependentUpon>StartUpForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminHandleActicites.resx">
+      <DependentUpon>AdminHandleActicites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHandleAlumni.resx">
+      <DependentUpon>AdminHandleAlumni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMeny.resx">
+      <DependentUpon>AdminMeny.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminShowProgram.resx">
+      <DependentUpon>AdminShowProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlumniActivities.resx">
+      <DependentUpon>AlumniActivities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlumniMeny.resx">
+      <DependentUpon>AlumniMeny.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminShowSection.resx">
+      <DependentUpon>AdminShowSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlumniMyActivities.resx">
+      <DependentUpon>AlumniMyActivities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAdmin.resx">
+      <DependentUpon>CreateAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAlumni.resx">
+      <DependentUpon>CreateAlumni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEditActivities.resx">
+      <DependentUpon>AdminEditActivities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginAdmin.resx">
+      <DependentUpon>LoginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInAlumni.resx">
+      <DependentUpon>LogInAlumni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartUpForm.resx">
+      <DependentUpon>StartUpForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
