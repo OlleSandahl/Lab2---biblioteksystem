@@ -18,12 +18,12 @@ namespace DataLayer1
         }
                
 
-        public DbSet<Aktivity> aktivities { get; set; }
-        public DbSet<Alumnus> alumni { get; set; }
-        public DbSet<Employee> employees { get; set; }  
-        public DbSet<Person> persons { get; set; }
-        public DbSet<Program> programs { get; set; }
-        public DbSet<Section> sections { get; set; }
+        public DbSet<Aktivity> Aktivities { get; set; }
+        public DbSet<Alumnus> Alumni { get; set; }
+        public DbSet<Employee> Employees { get; set; }  
+        public DbSet<Person> Persons { get; set; }
+        public DbSet<Program> Programs { get; set; }
+        public DbSet<Section> Sections { get; set; }
 
 
 
