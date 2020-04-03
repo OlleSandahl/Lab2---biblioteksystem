@@ -47,8 +47,8 @@ namespace GUI
                 employee.PersonCode = persnumber;
                 employee.EmployeeId = EmployeeNR;
 
-                BusinessManger.CreateEmployee(employee);
-                DialogResult = DialogResult.OK;
+                //BusinessManger.CreateEmployee(employee);
+                //DialogResult = DialogResult.OK;
                 
                 
             }
