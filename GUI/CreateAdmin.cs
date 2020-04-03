@@ -15,7 +15,7 @@ namespace GUI
 {
     public partial class CreateAdmin : Form
     {
-        //buisness manger ska in här man kan inte tillämpa det!! help
+        //buisness manger ska in här man kan inte tillämpa det!! help 
         public CreateAdmin()
         {
             InitializeComponent();
