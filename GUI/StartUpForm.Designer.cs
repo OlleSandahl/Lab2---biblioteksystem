@@ -36,7 +36,7 @@
             this.Txt_select = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxLogInAlumniPassword = new System.Windows.Forms.TextBox();
-            this.textBoxLoginaAlumni = new System.Windows.Forms.TextBox();
+            this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.txt_password = new System.Windows.Forms.Label();
             this.txt_Username = new System.Windows.Forms.Label();
             this.btn_LogIn = new System.Windows.Forms.Button();
@@ -118,20 +118,20 @@
             // 
             // textBoxLogInAlumniPassword
             // 
-            this.textBoxLogInAlumniPassword.Location = new System.Drawing.Point(440, 232);
+            this.textBoxLogInAlumniPassword.Location = new System.Drawing.Point(437, 232);
             this.textBoxLogInAlumniPassword.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxLogInAlumniPassword.Name = "textBoxLogInAlumniPassword";
             this.textBoxLogInAlumniPassword.Size = new System.Drawing.Size(211, 22);
             this.textBoxLogInAlumniPassword.TabIndex = 34;
             this.textBoxLogInAlumniPassword.UseSystemPasswordChar = true;
             // 
-            // textBoxLoginaAlumni
+            // textBoxLogin
             // 
-            this.textBoxLoginaAlumni.Location = new System.Drawing.Point(440, 168);
-            this.textBoxLoginaAlumni.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxLoginaAlumni.Name = "textBoxLoginaAlumni";
-            this.textBoxLoginaAlumni.Size = new System.Drawing.Size(211, 22);
-            this.textBoxLoginaAlumni.TabIndex = 33;
+            this.textBoxLogin.Location = new System.Drawing.Point(440, 168);
+            this.textBoxLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLogin.Name = "textBoxLogin";
+            this.textBoxLogin.Size = new System.Drawing.Size(211, 22);
+            this.textBoxLogin.TabIndex = 33;
             // 
             // txt_password
             // 
@@ -165,6 +165,7 @@
             this.btn_LogIn.TabIndex = 30;
             this.btn_LogIn.Text = "Log in";
             this.btn_LogIn.UseVisualStyleBackColor = true;
+            this.btn_LogIn.Click += new System.EventHandler(this.btn_LogIn_Click);
             // 
             // StartUpForm
             // 
@@ -172,7 +173,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1081, 579);
             this.Controls.Add(this.textBoxLogInAlumniPassword);
-            this.Controls.Add(this.textBoxLoginaAlumni);
+            this.Controls.Add(this.textBoxLogin);
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.txt_Username);
             this.Controls.Add(this.btn_LogIn);
@@ -201,7 +202,7 @@
         private System.Windows.Forms.Label Txt_select;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxLogInAlumniPassword;
-        private System.Windows.Forms.TextBox textBoxLoginaAlumni;
+        private System.Windows.Forms.TextBox textBoxLogin;
         private System.Windows.Forms.Label txt_password;
         private System.Windows.Forms.Label txt_Username;
         private System.Windows.Forms.Button btn_LogIn;

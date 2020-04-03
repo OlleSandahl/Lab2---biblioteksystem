@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BuisnessLayer1;
 
 namespace GUI
 {
     public partial class StartUpForm : Form
     {
+        BusinessManager businessManager = new BusinessManager();
         public StartUpForm()
         {
             InitializeComponent();
@@ -47,5 +49,33 @@ namespace GUI
         {
             Application.Exit();
         }
+
+        private void btn_LogIn_Click(object sender, EventArgs e)
+        {
+            Global.CurrentUser = businessManager.GetUser(textBoxLogin.Text, textBoxLogInAlumniPassword.Text);
+
+            if (Global.CurrentUser == null)
+            {
+                MessageBox.Show("Try again");
+            }
+            else
+            {
+                  if(businessManager.IsEmployee(Global.CurrentUser))
+                {
+                    this.Visible = !this.Visible;
+                    AdminMeny adminMeny = new AdminMeny();
+                    if (adminMeny.ShowDialog() == DialogResult.OK)
+                        this.Visible = !this.Visible;
+                }
+                  if(businessManager.IsAlumnus(Global.CurrentUser))
+                {
+                    this.Visible = !this.Visible;
+                    AlumniMeny alumniMeny = new AlumniMeny();
+                    if (alumniMeny.ShowDialog() == DialogResult.OK)
+                        this.Visible = !this.Visible;
+                }
+            }
+        }
+        
     }
 }
