@@ -122,6 +122,7 @@
     <Compile Include="AdminEditActivities.Designer.cs">
       <DependentUpon>AdminEditActivities.cs</DependentUpon>
     </Compile>
+    <Compile Include="Global.cs" />
     <Compile Include="StartUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
