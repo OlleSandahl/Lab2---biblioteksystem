@@ -10,7 +10,7 @@ using DataLayer1.Repositories;
 
 namespace BuisnessLayer1
 {
-    class BusinessManager
+    public class BusinessManager
     {
         private LibarysystemDBcontext context;
 

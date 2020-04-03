@@ -15,7 +15,7 @@ namespace GUI
 {
     public partial class CreateAdmin : Form
     {
-        //buisness manger ska in här man kan inte tillämpa det!! help 
+        BusinessManager businessManager = new BusinessManager();
         public CreateAdmin()
         {
             InitializeComponent();
@@ -47,8 +47,8 @@ namespace GUI
                 employee.PersonCode = persnumber;
                 employee.EmployeeId = EmployeeNR;
 
-                //BusinessManger.CreateEmployee(employee);
-                //DialogResult = DialogResult.OK;
+                businessManager.CreateEmployee(employee);
+                DialogResult = DialogResult.OK;
                 
                 
             }
