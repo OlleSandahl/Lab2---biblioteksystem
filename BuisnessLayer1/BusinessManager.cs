@@ -62,7 +62,7 @@ namespace BuisnessLayer1
             Person x = unitOfWork.Person.GetUser(Username, Password);
 
             if (x != null)
-                return new Person(x);
+                return new Person();
             else return null;
         }
 
@@ -98,11 +98,11 @@ namespace BuisnessLayer1
             return sections;
         }
 
-        public List<LibarysystemDBcontext> GetAlumns()
+        public List<Alumnus> GetAlumns()
         {
-            List<LibarysystemDBcontext> alumns = new List<LibarysystemDBcontext>();
+            List<Alumnus> alumns = new List<Alumnus>();
             foreach (Alumnus alumn in unitOfWork.Alumnus.GetAlumns())
-                alumns.Add(LibarysystemDBcontext.Convert(alumn));
+                alumns.Add(alumn);
 
             return alumns;
         }
