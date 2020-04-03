@@ -13,14 +13,20 @@ namespace DataLayer1.Repositories
         {
 
         }
-        public List<Person> GetPerson()
+        public List<Person> GetPersons()
         {
             using (var db = new LibarysystemDBcontext())
             {
                 return db.Persons.ToList();
             }
         }
-
+        public Person GetUser(string username, string password)
+        {
+            using (var db = new LibarysystemDBcontext())
+            {
+                return db.Persons.Where(x => x.Username == username && x.Password == password).FirstOrDefault();
+            }
+        }
         public LibarysystemDBcontext LibarysystemDBcontext
         {
             get { return Context as LibarysystemDBcontext; }

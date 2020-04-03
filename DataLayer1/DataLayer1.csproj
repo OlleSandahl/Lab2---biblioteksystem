@@ -59,11 +59,11 @@
     <Compile Include="IRepositories\IActivitiesRepository.cs" />
     <Compile Include="Repositories\AlumnusRepository.cs" />
     <Compile Include="IRepositories\IAlumnusRepository.cs" />
-    <Compile Include="IRepositories\IPersonRepository.cs" />
     <Compile Include="Repositories\EmployeeRepository.cs" />
     <Compile Include="IRepositories\IEmployeeRepository.cs" />
     <Compile Include="IRepositories\ISectionRepository.cs" />
     <Compile Include="IRepositories\IProgramRepository.cs" />
+    <Compile Include="IRepositories\IPersonRepository.cs" />
     <Compile Include="Repositories\PersonRepository.cs" />
     <Compile Include="Repositories\ProgramRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />

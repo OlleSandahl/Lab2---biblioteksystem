@@ -7,6 +7,7 @@ namespace DataLayer1.Repositories
     {
         LibarysystemDBcontext LibarysystemDBcontext { get; }
 
-        List<Person> GetPerson();
+        List<Person> GetPersons();
+        Person GetUser(string username, string password);
     }
 }
