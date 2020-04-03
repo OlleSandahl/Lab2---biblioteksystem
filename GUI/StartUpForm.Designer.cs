@@ -60,6 +60,7 @@
             this.Btn_createnewAlumni.TabIndex = 22;
             this.Btn_createnewAlumni.Text = "Create new";
             this.Btn_createnewAlumni.UseVisualStyleBackColor = true;
+            this.Btn_createnewAlumni.Click += new System.EventHandler(this.Btn_createnewAlumni_Click);
             // 
             // label2
             // 
@@ -80,6 +81,7 @@
             this.Btn_createNewAdmin.TabIndex = 20;
             this.Btn_createNewAdmin.Text = "Create new";
             this.Btn_createNewAdmin.UseVisualStyleBackColor = true;
+            this.Btn_createNewAdmin.Click += new System.EventHandler(this.Btn_createNewAdmin_Click);
             // 
             // Exit_btn
             // 
@@ -90,6 +92,7 @@
             this.Exit_btn.TabIndex = 19;
             this.Exit_btn.Text = "Exit";
             this.Exit_btn.UseVisualStyleBackColor = true;
+            this.Exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
             // 
             // Txt_select
             // 
@@ -144,6 +147,7 @@
             this.Btn_admin.TabIndex = 14;
             this.Btn_admin.Text = "Log in";
             this.Btn_admin.UseVisualStyleBackColor = true;
+            this.Btn_admin.Click += new System.EventHandler(this.Btn_admin_Click);
             // 
             // Btn_alumni
             // 
@@ -155,6 +159,7 @@
             this.Btn_alumni.TabIndex = 13;
             this.Btn_alumni.Text = "Log In";
             this.Btn_alumni.UseVisualStyleBackColor = true;
+            this.Btn_alumni.Click += new System.EventHandler(this.Btn_alumni_Click);
             // 
             // StartUpForm
             // 

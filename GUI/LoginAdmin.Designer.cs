@@ -46,6 +46,7 @@
             this.Btn_exit.TabIndex = 32;
             this.Btn_exit.Text = "Exit";
             this.Btn_exit.UseVisualStyleBackColor = true;
+            this.Btn_exit.Click += new System.EventHandler(this.Btn_exit_Click);
             // 
             // Btn_previous
             // 
@@ -56,6 +57,7 @@
             this.Btn_previous.TabIndex = 31;
             this.Btn_previous.Text = "Previous";
             this.Btn_previous.UseVisualStyleBackColor = true;
+            this.Btn_previous.Click += new System.EventHandler(this.Btn_previous_Click);
             // 
             // textBoxLogInAdminPassword
             // 

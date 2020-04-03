@@ -16,5 +16,42 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void Btn_admin_Click(object sender, EventArgs e)
+        {
+            this.Visible = !this.Visible;
+            Log_in_Admin log_In_Admin = new Log_in_Admin();
+            if (log_In_Admin.ShowDialog() == DialogResult.OK)
+                this.Visible = !this.Visible;
+        }
+
+        private void Btn_alumni_Click(object sender, EventArgs e)
+        {
+            this.Visible = !this.Visible;
+            LogInAlumni logInAlumni = new LogInAlumni();
+            if (logInAlumni.ShowDialog() == DialogResult.OK)
+                this.Visible = !this.Visible;
+        }
+
+        private void Btn_createNewAdmin_Click(object sender, EventArgs e)
+        {
+            this.Visible = !this.Visible;
+            CreateAdmin createAdmin = new CreateAdmin();
+            if (createAdmin.ShowDialog() == DialogResult.OK)
+                this.Visible = !this.Visible;
+        }
+
+        private void Btn_createnewAlumni_Click(object sender, EventArgs e)
+        {
+            this.Visible = !this.Visible;
+            CreateAlumni createAlumni = new CreateAlumni();
+            if (createAlumni.ShowDialog() == DialogResult.OK)
+                this.Visible = !this.Visible;
+        }
+
+        private void Exit_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

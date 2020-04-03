@@ -70,6 +70,7 @@
             this.Btn_previous.TabIndex = 38;
             this.Btn_previous.Text = "Previous";
             this.Btn_previous.UseVisualStyleBackColor = true;
+            this.Btn_previous.Click += new System.EventHandler(this.Btn_previous_Click);
             // 
             // btn_register
             // 
