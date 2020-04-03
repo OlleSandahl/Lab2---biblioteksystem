@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.signature = new System.Windows.Forms.Label();
-            this.Signature_txtbox = new System.Windows.Forms.TextBox();
+            this.EmployeeNr = new System.Windows.Forms.Label();
+            this.EmployeeNR_txtbox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_register = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -60,24 +60,24 @@
             this.checkBox1.Text = "Confirme information";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // signature
+            // EmployeeNr
             // 
-            this.signature.AutoSize = true;
-            this.signature.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signature.Location = new System.Drawing.Point(13, 281);
-            this.signature.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.signature.Name = "signature";
-            this.signature.Size = new System.Drawing.Size(80, 20);
-            this.signature.TabIndex = 58;
-            this.signature.Text = "Signature";
+            this.EmployeeNr.AutoSize = true;
+            this.EmployeeNr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeNr.Location = new System.Drawing.Point(13, 281);
+            this.EmployeeNr.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.EmployeeNr.Name = "EmployeeNr";
+            this.EmployeeNr.Size = new System.Drawing.Size(146, 20);
+            this.EmployeeNr.TabIndex = 58;
+            this.EmployeeNr.Text = "Employee Number";
             // 
-            // Signature_txtbox
+            // EmployeeNR_txtbox
             // 
-            this.Signature_txtbox.Location = new System.Drawing.Point(13, 305);
-            this.Signature_txtbox.Margin = new System.Windows.Forms.Padding(4);
-            this.Signature_txtbox.Name = "Signature_txtbox";
-            this.Signature_txtbox.Size = new System.Drawing.Size(164, 22);
-            this.Signature_txtbox.TabIndex = 57;
+            this.EmployeeNR_txtbox.Location = new System.Drawing.Point(13, 305);
+            this.EmployeeNR_txtbox.Margin = new System.Windows.Forms.Padding(4);
+            this.EmployeeNR_txtbox.Name = "EmployeeNR_txtbox";
+            this.EmployeeNR_txtbox.Size = new System.Drawing.Size(164, 22);
+            this.EmployeeNR_txtbox.TabIndex = 57;
             // 
             // label2
             // 
@@ -99,6 +99,7 @@
             this.btn_register.TabIndex = 55;
             this.btn_register.Text = "register";
             this.btn_register.UseVisualStyleBackColor = true;
+            this.btn_register.Click += new System.EventHandler(this.btn_register_Click);
             // 
             // label9
             // 
@@ -239,8 +240,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(423, 633);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.signature);
-            this.Controls.Add(this.Signature_txtbox);
+            this.Controls.Add(this.EmployeeNr);
+            this.Controls.Add(this.EmployeeNR_txtbox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_register);
             this.Controls.Add(this.label9);
@@ -268,8 +269,8 @@
         #endregion
 
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Label signature;
-        private System.Windows.Forms.TextBox Signature_txtbox;
+        private System.Windows.Forms.Label EmployeeNr;
+        private System.Windows.Forms.TextBox EmployeeNR_txtbox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_register;
         private System.Windows.Forms.Label label9;

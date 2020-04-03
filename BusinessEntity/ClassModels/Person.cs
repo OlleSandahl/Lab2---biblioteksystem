@@ -9,7 +9,7 @@ namespace BusinessEntity.ClassModels
    public class Person
     {
         public int PersonId { get; set; }
-        public int PersonCode { get; set; }
+        public string PersonCode { get; set; }
         public string Fname { get; set; }
         public string Lname { get; set; }
         public string Email { get; set; }

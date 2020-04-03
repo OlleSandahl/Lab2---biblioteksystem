@@ -122,18 +122,6 @@
     <Compile Include="AdminEditActivities.Designer.cs">
       <DependentUpon>AdminEditActivities.cs</DependentUpon>
     </Compile>
-    <Compile Include="LogInAlumni.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LogInAlumni.Designer.cs">
-      <DependentUpon>LogInAlumni.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LoginAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoginAdmin.Designer.cs">
-      <DependentUpon>LoginAdmin.cs</DependentUpon>
-    </Compile>
     <Compile Include="StartUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,12 +162,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminEditActivities.resx">
       <DependentUpon>AdminEditActivities.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoginAdmin.resx">
-      <DependentUpon>LoginAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LogInAlumni.resx">
-      <DependentUpon>LogInAlumni.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartUpForm.resx">
       <DependentUpon>StartUpForm.cs</DependentUpon>
