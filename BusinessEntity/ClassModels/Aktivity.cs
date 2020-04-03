@@ -20,5 +20,7 @@ namespace BusinessEntity.ClassModels
 
         public virtual Employee Employee { get; set; }
         public virtual ICollection<Alumnus> Alumnus { get; set; }
+
+
     }
 }

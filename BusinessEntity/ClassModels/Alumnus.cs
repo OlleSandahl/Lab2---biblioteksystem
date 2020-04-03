@@ -12,5 +12,20 @@ namespace BusinessEntity.ClassModels
 
         public virtual Program Program { get; set; }
         public virtual Aktivity Aktivity { get; set; }
+
+
+        public static Alumnus Convert(Alumnus alumn)
+        {
+            return new Alumnus()
+            {
+                Username = alumn.Username,
+                Password = alumn.Password,
+                PersonCode = alumn.PersonCode,
+                AlumnusId = alumn.AlumnusId,
+                Fname = alumn.Fname,
+                Lname = alumn.Lname,
+                Email = alumn.Email,
+            };
+        }
     }
 }

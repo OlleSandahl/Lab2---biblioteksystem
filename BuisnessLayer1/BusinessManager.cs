@@ -82,18 +82,18 @@ namespace BuisnessLayer1
 
         public List<Aktivity> GetAktivity()
         {
-            List<Aktivity> aktivities = new List<>();
-            foreach (DataLayer.Event eVent in unitOfWork.Events.GetEvents())
-                events.Add(EventBL.Convert(eVent));
+            List<Aktivity> aktivities = new List<Aktivity>();
+            foreach (Aktivity aktivity in unitOfWork.Activities.GetActivities())
+                aktivities.Add(aktivity);
 
-            return events;
+            return aktivities;
         }
 
-        public List<SectionBL> GetSections()
+        public List<Section> GetSections()
         {
-            List<SectionBL> sections = new List<SectionBL>();
-            foreach (DataLayer.Section section in unitOfWork.Sections.GetSections())
-                sections.Add(SectionBL.Convert(section));
+            List<Section> sections = new List<Section>();
+            foreach (Section section in unitOfWork.Section.GetSections())
+                sections.Add(section);
 
             return sections;
         }
@@ -101,29 +101,29 @@ namespace BuisnessLayer1
         public List<LibarysystemDBcontext> GetAlumns()
         {
             List<LibarysystemDBcontext> alumns = new List<LibarysystemDBcontext>();
-            foreach (DataLayer.Alumnus alumn in unitOfWork.Alumnus.GetAlumns())
+            foreach (Alumnus alumn in unitOfWork.Alumnus.GetAlumns())
                 alumns.Add(LibarysystemDBcontext.Convert(alumn));
 
             return alumns;
         }
 
-        public List<ProgramBL> GetPrograms()
+        public List<Program> GetPrograms()
         {
-            List<ProgramBL> programs = new List<ProgramBL>();
-            foreach (DataLayer.Program program in unitOfWork.Programs.GetPrograms())
-                programs.Add(ProgramBL.Convert(program));
+            List<Program> programs = new List<Program>();
+            foreach (Program program in unitOfWork.Program.GetProgram())
+                programs.Add(program);
 
             return programs;
         }
 
-        public void UpdateEvent(Aktivity aktivity, int aktivityId)
+        public void UpdateActivity(Aktivity aktivity, int aktivityId)
         {
             unitOfWork.Activities.UpdateActivity(aktivity, aktivityId);
         }
 
-        public void DeleteEvent(EventBL events)
+        public void DeleteEvent(Aktivity aktivity)
         {
-            unitOfWork.Events.DeleteEvent(events);
+            unitOfWork.Activities.DeleteActivities(aktivity);
         }
     }
 }
