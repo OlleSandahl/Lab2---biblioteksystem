@@ -19,5 +19,12 @@ namespace BusinessEntity.ClassModels
         public virtual Section Section { get; set; }
         public virtual ICollection<Aktivity> Aktivities { get; set; }
 
+        public Employee(string Username, string Fname, string ename, string Email, string Password)
+        {
+
+        }
     }
+
+  
+
 }

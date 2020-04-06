@@ -13,5 +13,10 @@ namespace BusinessEntity.ClassModels
         public virtual Program Program { get; set; }
         public virtual Aktivity Aktivity { get; set; }
 
+        public Alumnus(string Username, string Fname, string Lname, string Email, string Password)
+        {
+
+        }
+
     }
 }

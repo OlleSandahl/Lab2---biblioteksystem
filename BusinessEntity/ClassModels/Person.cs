@@ -24,10 +24,7 @@ namespace BusinessEntity.ClassModels
         //    this.Username = username;
         //    this.Password = password;
         //}
-        public Person()
-        {
-
-        }
+        
 
     }
 

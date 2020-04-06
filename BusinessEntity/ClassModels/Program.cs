@@ -9,7 +9,7 @@ namespace BusinessEntity.ClassModels
     public class Program
     {
         public int ProgramId { get; set; }
-        public int Name { get; set; }
+        public string Name { get; set; }
         
         public Program()
         {

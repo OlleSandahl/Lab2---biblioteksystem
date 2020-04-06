@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DataLayer1.Repositories;
+using BusinessEntity.ClassModels;
 
 namespace DataLayer1.UnitOfWork
 {
-    public class UnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly LibarysystemDBcontext _context;
 
@@ -28,7 +29,16 @@ namespace DataLayer1.UnitOfWork
             employee = new EmployeeRepository(_context);
             person = new PersonRepository(_context);
         }
-        
+        public int Compelte()
+        {
+            return _context.SaveChanges();
+        }
+
+        public void StartDatabase()
+        {
+            SystemSeed.Populate(_context);
+        }
+
 
 
     }
