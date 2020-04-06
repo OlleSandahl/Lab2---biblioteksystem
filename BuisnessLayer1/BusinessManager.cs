@@ -22,14 +22,47 @@ namespace BuisnessLayer1
             UnitOfWork = new UnitOfWork(libary);
         }
 
-        //public CreateAnmälan(Aktivity aktivity)
-        //{
-        //    UnitOfWork.
-        //}
+        public bool VerifyLogIn(string Id, string pw)
+        {
+            bool LogIn;
+            int id = Convert.ToInt32(Id);
+            Person person = UnitOfWork.person.Get(id);
+            if (person != null && person.Password == pw)
+            {
+                LogIn = true;
+                logIn = person;
+            }
+            else
+            {
+                LogIn = false;
+                logIn = null;
+            }
+            return LogIn;
+        }
 
-        //public DeleteAnmälan(Aktivity aktivity)
-        //{ }
-
+        public Person GetLogIn()
+        {
+            return logIn;
+        }
+        public bool AlumnLogIn()
+        {
+            bool alumnLogIn;
+            if(GetAlumni().Exists(x => x.PersonId == logIn.PersonId))
+            {
+                alumnLogIn = true;
+            }
+            else
+            {
+                alumnLogIn = false;
+            }
+            return alumnLogIn;
+        }
+        public void UppdateAlumn(Alumnus newAlumn)
+        {
+            UnitOfWork.person.Remove(logIn);
+            UnitOfWork.alumnus.Add(newAlumn);
+            Complete();
+        }
         public List<Alumnus> GetAlumni()
         {
             return UnitOfWork.alumnus.GetAll().ToList();
@@ -39,7 +72,10 @@ namespace BuisnessLayer1
         {
             return UnitOfWork.alumnus.Get(id);
         }
-
+        public void Complete()
+        {
+            UnitOfWork.Compelte();
+        }
 
 
 
