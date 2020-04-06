@@ -12,6 +12,37 @@ namespace BuisnessLayer1
 {
     public class BusinessManager
     {
+        LibarysystemDBcontext libary;
+        UnitOfWork UnitOfWork;
+        Person logIn;
+        
+        public BusinessManager()
+        {
+            libary = new LibarysystemDBcontext();
+            UnitOfWork = new UnitOfWork(libary);
+        }
+
+        //public CreateAnmälan(Aktivity aktivity)
+        //{
+        //    UnitOfWork.
+        //}
+
+        //public DeleteAnmälan(Aktivity aktivity)
+        //{ }
+
+        public List<Alumnus> GetAlumni()
+        {
+            return UnitOfWork.alumnus.GetAll().ToList();
+        }
+
+        public Alumnus GetAlumnus(int id)
+        {
+            return UnitOfWork.alumnus.Get(id);
+        }
+
+
+
+
 
     }
     //{
