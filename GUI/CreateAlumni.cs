@@ -37,7 +37,7 @@ namespace GUI
                 string alumnNumber = Snr_txtbox.Text;
                 string persCode = Pnr_txtbox.Text;
 
-                Alumnus alumnus = new Alumnus();
+                Alumnus alumnus = new Alumnus(username, fName, lName, email, password);
                 alumnus.Username = username;
                 alumnus.Password = password;
                 alumnus.PersonCode = persCode;
@@ -46,7 +46,7 @@ namespace GUI
                 alumnus.Lname = lName;
                 alumnus.Email = email;
 
-                businessManager.CreateAlumn(alumnus);
+               // businessManager.CreateAlumn(alumnus);
                 DialogResult = DialogResult.OK;
             }
         }
