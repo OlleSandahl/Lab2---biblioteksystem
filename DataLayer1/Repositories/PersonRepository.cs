@@ -7,29 +7,40 @@ using BusinessEntity.ClassModels;
 
 namespace DataLayer1.Repositories
 {
-    public class PersonRepository : Repository<Person>, IPersonRepository
+    public class PersonRepository : GenericRepository<Person>
     {
-        public PersonRepository(LibarysystemDBcontext context) : base(context)
+        public PersonRepository(LibarysystemDBcontext libarysystemDBcontext) : base(libarysystemDBcontext)
         {
 
         }
-        public List<Person> GetPersons()
-        {
-            using (var db = new LibarysystemDBcontext())
-            {
-                return db.Persons.ToList();
-            }
-        }
-        public Person GetUser(string username, string password)
-        {
-            using (var db = new LibarysystemDBcontext())
-            {
-                return db.Persons.Where(x => x.Username == username && x.Password == password).FirstOrDefault();
-            }
-        }
-        public LibarysystemDBcontext LibarysystemDBcontext
-        {
-            get { return Context as LibarysystemDBcontext; }
-        }
     }
 }
+
+
+
+
+
+//        public PersonRepository(LibarysystemDBcontext context) : base(context)
+//        {
+
+//        }
+//        public List<Person> GetPersons()
+//        {
+//            using (var db = new LibarysystemDBcontext())
+//            {
+//                return db.Persons.ToList();
+//            }
+//        }
+//        public Person GetUser(string username, string password)
+//        {
+//            using (var db = new LibarysystemDBcontext())
+//            {
+//                return db.Persons.Where(x => x.Username == username && x.Password == password).FirstOrDefault();
+//            }
+//        }
+//        public LibarysystemDBcontext LibarysystemDBcontext
+//        {
+//            get { return Context as LibarysystemDBcontext; }
+//        }
+//    }
+//}

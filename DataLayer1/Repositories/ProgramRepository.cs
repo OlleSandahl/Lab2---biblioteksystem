@@ -7,32 +7,41 @@ using BusinessEntity.ClassModels;
 
 namespace DataLayer1.Repositories
 {
-    public class ProgramRepository : Repository<Program>, IProgramRepository
+    public class ProgramRepository : GenericRepository<Program>
     {
-        public ProgramRepository(LibarysystemDBcontext context) : base(context)
+        public ProgramRepository(LibarysystemDBcontext libarysystemDBcontext) : base(libarysystemDBcontext)
         {
 
-        }
-        public void CreateProgram(Program program)
-        {
-            using (var db = new LibarysystemDBcontext())
-            {
-                db.Programs.Add(program);
-                db.SaveChanges();
-            }
-        }
-
-        public List<Program> GetProgram()
-        {
-            using (var db = new LibarysystemDBcontext())
-            {
-                return db.Programs.ToList();
-            }
-        }
-
-        public LibarysystemDBcontext LibarysystemDBcontext
-        {
-            get { return Context as LibarysystemDBcontext; }
         }
     }
+
+
+
+
+    //    public ProgramRepository(LibarysystemDBcontext context) : base(context)
+    //    {
+
+    //    }
+    //    public void CreateProgram(Program program)
+    //    {
+    //        using (var db = new LibarysystemDBcontext())
+    //        {
+    //            db.Programs.Add(program);
+    //            db.SaveChanges();
+    //        }
+    //    }
+
+    //    public List<Program> GetProgram()
+    //    {
+    //        using (var db = new LibarysystemDBcontext())
+    //        {
+    //            return db.Programs.ToList();
+    //        }
+    //    }
+
+    //    public LibarysystemDBcontext LibarysystemDBcontext
+    //    {
+    //        get { return Context as LibarysystemDBcontext; }
+    //    }
+    //}
 }

@@ -55,20 +55,15 @@
     <Compile Include="LibarysystemDBcontext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ActivitiesRepository.cs" />
-    <Compile Include="IRepositories\IRepository.cs" />
-    <Compile Include="IRepositories\IActivitiesRepository.cs" />
     <Compile Include="Repositories\AlumnusRepository.cs" />
-    <Compile Include="IRepositories\IAlumnusRepository.cs" />
     <Compile Include="Repositories\EmployeeRepository.cs" />
-    <Compile Include="IRepositories\IEmployeeRepository.cs" />
-    <Compile Include="IRepositories\ISectionRepository.cs" />
-    <Compile Include="IRepositories\IProgramRepository.cs" />
-    <Compile Include="IRepositories\IPersonRepository.cs" />
+    <Compile Include="Repositories\GenericRepository.cs" />
+    <Compile Include="Repositories\IAlumnusRepository.cs" />
+    <Compile Include="Repositories\IEmployeeRepository.cs" />
+    <Compile Include="Repositories\IGenericRepository.cs" />
     <Compile Include="Repositories\PersonRepository.cs" />
     <Compile Include="Repositories\ProgramRepository.cs" />
-    <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Repositories\SectionRepository.cs" />
-    <Compile Include="UnitOfWork\IUnitOfWork.cs" />
     <Compile Include="UnitOfWork\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +75,9 @@
       <Project>{97777750-1b09-4fd9-ae8f-582dfd0309d1}</Project>
       <Name>BusinessEntity</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IRepositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
