@@ -7,14 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BuisnessLayer1;
+
 
 namespace GUI
 {
     public partial class AlumniMeny : Form
     {
-        public AlumniMeny()
+        BusinessManager businessManager = new BusinessManager();
+
+        public AlumniMeny(BusinessManager businessManager)
         {
+            this.businessManager = businessManager;
             InitializeComponent();
+        }
+
+        private void Btn_Activities_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

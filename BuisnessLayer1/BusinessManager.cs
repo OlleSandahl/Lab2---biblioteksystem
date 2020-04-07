@@ -10,12 +10,12 @@ using DataLayer1.Repositories;
 
 namespace BuisnessLayer1
 {
-    public class BusinessManager
+    public class BusinessManager : IBusinessManager
     {
         LibarysystemDBcontext libary;
         UnitOfWork UnitOfWork;
         Person logIn;
-        
+
         public BusinessManager()
         {
             libary = new LibarysystemDBcontext();
@@ -47,7 +47,7 @@ namespace BuisnessLayer1
         public bool AlumnLogIn()
         {
             bool alumnLogIn;
-            if(GetAlumni().Exists(x => x.PersonId == logIn.PersonId))
+            if (GetAlumni().Exists(x => x.PersonId == logIn.PersonId))
             {
                 alumnLogIn = true;
             }

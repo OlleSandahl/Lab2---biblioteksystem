@@ -54,6 +54,7 @@
             this.Btn_Activities.TabIndex = 20;
             this.Btn_Activities.Text = "Activities";
             this.Btn_Activities.UseVisualStyleBackColor = true;
+            this.Btn_Activities.Click += new System.EventHandler(this.Btn_Activities_Click);
             // 
             // Btn_MyProfile
             // 

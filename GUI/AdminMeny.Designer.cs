@@ -76,6 +76,7 @@
             this.Btn_HandleAlumni.TabIndex = 19;
             this.Btn_HandleAlumni.Text = "Handle alumni";
             this.Btn_HandleAlumni.UseVisualStyleBackColor = true;
+            this.Btn_HandleAlumni.Click += new System.EventHandler(this.Btn_HandleAlumni_Click);
             // 
             // Btn_handleactivities
             // 

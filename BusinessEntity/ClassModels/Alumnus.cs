@@ -8,7 +8,7 @@ namespace BusinessEntity.ClassModels
 {
     public partial class Alumnus : Person
     {
-        public string AlumnusId { get; set; }
+        public int AlumnusId { get; set; }
 
         public virtual Program Program { get; set; }
         public virtual Aktivity Aktivity { get; set; }

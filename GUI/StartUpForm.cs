@@ -13,6 +13,7 @@ namespace GUI
 {
     public partial class StartUpForm : Form
     {
+        
         BusinessManager businessManager = new BusinessManager();
         public StartUpForm()
         {
@@ -52,6 +53,33 @@ namespace GUI
 
         private void btn_LogIn_Click(object sender, EventArgs e)
         {
+            var CorrectPassword = businessManager.VerifyLogIn(textBoxLogin.Text, textBoxLogInAlumniPassword.Text);
+            if (CorrectPassword)
+            {
+                MessageBox.Show("you successfully logged in");
+                if (businessManager.AlumnLogIn())
+                {
+                    AlumniMeny alumniMeny = new AlumniMeny(businessManager);
+                    alumniMeny.ShowDialog();
+                }
+                else
+                {
+                    AdminMeny adminMeny = new AdminMeny(businessManager);
+                    adminMeny.ShowDialog();
+                }
+            }
+            else
+            {
+                DialogResult result = MessageBox.Show("Username or password are incorrect", "Try again",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.No)
+                {
+                    Application.Exit();
+                }
+                
+            }
+            
+            
             //Global.CurrentUser = businessManager.GetUser(textBoxLogin.Text, textBoxLogInAlumniPassword.Text);
 
             //if (Global.CurrentUser == null)

@@ -7,14 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BuisnessLayer1;
 
 namespace GUI
 {
     public partial class AdminMeny : Form
     {
-        public AdminMeny()
+        BusinessManager businessManager = new BusinessManager();
+        public AdminMeny(BusinessManager businessManager)
         {
+            this.businessManager = businessManager;
             InitializeComponent();
+        }
+
+        private void Btn_HandleAlumni_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

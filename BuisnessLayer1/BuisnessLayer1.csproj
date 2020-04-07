@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BusinessManager.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="IBusinessManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
