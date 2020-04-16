@@ -78,8 +78,9 @@ namespace GUI
                 }
                 
             }
-            
-            
+
+            //Lisa","Karlsson","lisa@karlsson.com","karlsson
+
             //Global.CurrentUser = businessManager.GetUser(textBoxLogin.Text, textBoxLogInAlumniPassword.Text);
 
             //if (Global.CurrentUser == null)
@@ -102,8 +103,8 @@ namespace GUI
             //        if (alumniMeny.ShowDialog() == DialogResult.OK)
             //            this.Visible = !this.Visible;
             //    }
-            }
         }
+    }
         
     }
 
