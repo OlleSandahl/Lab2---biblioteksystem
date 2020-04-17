@@ -45,7 +45,7 @@ namespace GUI
             this.Btn_programs.TabIndex = 22;
             this.Btn_programs.Text = "Show Programs";
             this.Btn_programs.UseVisualStyleBackColor = true;
-            this.Btn_programs.Click += new System.EventHandler(this.Btn_programs_Click);
+            this.Btn_programs.Click += new System.EventHandler(this.Btn_programs_Click_1);
             // 
             // Btn_sections
             // 
@@ -55,6 +55,7 @@ namespace GUI
             this.Btn_sections.TabIndex = 21;
             this.Btn_sections.Text = "Show Sections";
             this.Btn_sections.UseVisualStyleBackColor = true;
+            this.Btn_sections.Click += new System.EventHandler(this.Btn_sections_Click);
             // 
             // BtnLogOut
             // 
@@ -65,6 +66,7 @@ namespace GUI
             this.BtnLogOut.TabIndex = 20;
             this.BtnLogOut.Text = "Log out";
             this.BtnLogOut.UseVisualStyleBackColor = true;
+            this.BtnLogOut.Click += new System.EventHandler(this.BtnLogOut_Click);
             // 
             // Btn_HandleAlumni
             // 
@@ -98,7 +100,7 @@ namespace GUI
             this.Controls.Add(this.BtnLogOut);
             this.Controls.Add(this.Btn_HandleAlumni);
             this.Controls.Add(this.Btn_handleactivities);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AdminMeny";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin Meny";
