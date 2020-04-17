@@ -16,5 +16,10 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void Btn_delete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

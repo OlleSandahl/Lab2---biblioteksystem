@@ -95,6 +95,7 @@
             this.Btn_edit.TabIndex = 16;
             this.Btn_edit.Text = "Edit";
             this.Btn_edit.UseVisualStyleBackColor = true;
+            this.Btn_edit.Click += new System.EventHandler(this.Btn_edit_Click);
             // 
             // Btn_previous
             // 
@@ -115,6 +116,7 @@
             this.Btn_createNew.TabIndex = 14;
             this.Btn_createNew.Text = "Create new";
             this.Btn_createNew.UseVisualStyleBackColor = true;
+            this.Btn_createNew.Click += new System.EventHandler(this.Btn_createNew_Click);
             // 
             // groupBox1
             // 
@@ -177,6 +179,7 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(533, 331);
             this.dataGridView1.TabIndex = 12;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // AdminHandleActicites
             // 

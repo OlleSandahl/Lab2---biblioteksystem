@@ -88,6 +88,7 @@
             this.Btn_handleactivities.TabIndex = 18;
             this.Btn_handleactivities.Text = "Handle activities";
             this.Btn_handleactivities.UseVisualStyleBackColor = true;
+            this.Btn_handleactivities.Click += new System.EventHandler(this.Btn_handleactivities_Click);
             // 
             // AdminMeny
             // 
