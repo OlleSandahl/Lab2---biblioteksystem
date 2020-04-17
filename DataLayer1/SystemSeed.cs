@@ -15,7 +15,7 @@ namespace DataLayer1
 
             libarysystemDBcontext.Alumni.Add(Olle);
 
-            libarysystemDBcontext.Employees.Add(new Employee("OS", "olle", "Sandal", "s173513@employee.hb.se", "OS1"));
+            libarysystemDBcontext.Employees.Add(new Employee("OSU", "olle", "Sandal", "s173513@employee.hb.se", "OSU1"));
 
             libarysystemDBcontext.Programs.Add(new Program()
             {
