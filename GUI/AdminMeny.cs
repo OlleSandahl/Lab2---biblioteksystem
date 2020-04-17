@@ -20,6 +20,7 @@ namespace GUI
             InitializeComponent();
         }
 
+
         private void Btn_HandleAlumni_Click(object sender, EventArgs e)
         {
             Admin_Handle_Alumni admin_Handle_Alumni = new Admin_Handle_Alumni();

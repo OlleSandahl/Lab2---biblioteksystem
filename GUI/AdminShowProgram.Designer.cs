@@ -37,30 +37,28 @@
             // 
             // Btn_previous
             // 
-            this.Btn_previous.Location = new System.Drawing.Point(648, 474);
-            this.Btn_previous.Margin = new System.Windows.Forms.Padding(4);
+            this.Btn_previous.Location = new System.Drawing.Point(486, 385);
             this.Btn_previous.Name = "Btn_previous";
-            this.Btn_previous.Size = new System.Drawing.Size(100, 28);
+            this.Btn_previous.Size = new System.Drawing.Size(75, 23);
             this.Btn_previous.TabIndex = 7;
             this.Btn_previous.Text = "Previous";
             this.Btn_previous.UseVisualStyleBackColor = true;
+            this.Btn_previous.Click += new System.EventHandler(this.Btn_previous_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(662, 53);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(496, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 17);
+            this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Program";
             // 
             // Btn_show
             // 
-            this.Btn_show.Location = new System.Drawing.Point(648, 73);
-            this.Btn_show.Margin = new System.Windows.Forms.Padding(4);
+            this.Btn_show.Location = new System.Drawing.Point(486, 59);
             this.Btn_show.Name = "Btn_show";
-            this.Btn_show.Size = new System.Drawing.Size(100, 28);
+            this.Btn_show.Size = new System.Drawing.Size(75, 23);
             this.Btn_show.TabIndex = 5;
             this.Btn_show.Text = "Show";
             this.Btn_show.UseVisualStyleBackColor = true;
@@ -68,22 +66,22 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 13);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(10, 11);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(600, 420);
+            this.dataGridView1.Size = new System.Drawing.Size(450, 341);
             this.dataGridView1.TabIndex = 4;
             // 
             // AdminShowProgram
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(821, 530);
+            this.ClientSize = new System.Drawing.Size(616, 431);
             this.Controls.Add(this.Btn_previous);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Btn_show);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AdminShowProgram";
             this.Text = "Admin Show Program";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -14,11 +14,6 @@ namespace GUI
     public partial class AlumniActivities : Form
     {
         BusinessManager businessManager = new BusinessManager();
-
-        public AlumniActivities()
-        {
-        }
-
         public AlumniActivities(BusinessManager businessManager)
         {
             this.businessManager = businessManager;
@@ -31,6 +26,11 @@ namespace GUI
             AlumniMyActivities alumniMyActivities = new AlumniMyActivities();
             if (alumniMyActivities.ShowDialog() == DialogResult.OK)
                 this.Visible = !this.Visible;
+        }
+
+        private void Btn_Previous_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
         }
     }
 }

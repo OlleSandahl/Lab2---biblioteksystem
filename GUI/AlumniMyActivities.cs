@@ -19,10 +19,7 @@ namespace GUI
 
         private void Btn_previous_Click(object sender, EventArgs e)
         {
-            this.Visible = !this.Visible;
-            AlumniActivities alumnActivities = new AlumniActivities();
-            if (alumnActivities.ShowDialog() == DialogResult.OK)
-                this.Visible = !this.Visible;
+            DialogResult = DialogResult.OK;
         }
     }
 }

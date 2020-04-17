@@ -40,20 +40,19 @@
             // 
             // Btn_Previous
             // 
-            this.Btn_Previous.Location = new System.Drawing.Point(463, 341);
-            this.Btn_Previous.Margin = new System.Windows.Forms.Padding(4);
+            this.Btn_Previous.Location = new System.Drawing.Point(347, 277);
             this.Btn_Previous.Name = "Btn_Previous";
-            this.Btn_Previous.Size = new System.Drawing.Size(100, 28);
+            this.Btn_Previous.Size = new System.Drawing.Size(75, 23);
             this.Btn_Previous.TabIndex = 5;
             this.Btn_Previous.Text = "Previous";
             this.Btn_Previous.UseVisualStyleBackColor = true;
+            this.Btn_Previous.Click += new System.EventHandler(this.Btn_Previous_Click);
             // 
             // Btn_save
             // 
-            this.Btn_save.Location = new System.Drawing.Point(318, 341);
-            this.Btn_save.Margin = new System.Windows.Forms.Padding(4);
+            this.Btn_save.Location = new System.Drawing.Point(238, 277);
             this.Btn_save.Name = "Btn_save";
-            this.Btn_save.Size = new System.Drawing.Size(100, 28);
+            this.Btn_save.Size = new System.Drawing.Size(75, 23);
             this.Btn_save.TabIndex = 4;
             this.Btn_save.Text = "Save";
             this.Btn_save.UseVisualStyleBackColor = true;
@@ -64,11 +63,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.Txtbox_description);
             this.groupBox1.Controls.Add(this.Txtbox_activitieName);
-            this.groupBox1.Location = new System.Drawing.Point(23, 25);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(17, 20);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(540, 289);
+            this.groupBox1.Size = new System.Drawing.Size(405, 235);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Edit activitie";
@@ -76,49 +73,46 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(5, 101);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(4, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 17);
+            this.label2.Size = new System.Drawing.Size(98, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Activitie description";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 54);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(25, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 17);
+            this.label1.Size = new System.Drawing.Size(73, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Activitie name";
             // 
             // Txtbox_description
             // 
-            this.Txtbox_description.Location = new System.Drawing.Point(144, 97);
-            this.Txtbox_description.Margin = new System.Windows.Forms.Padding(4);
+            this.Txtbox_description.Location = new System.Drawing.Point(108, 79);
             this.Txtbox_description.Multiline = true;
             this.Txtbox_description.Name = "Txtbox_description";
-            this.Txtbox_description.Size = new System.Drawing.Size(387, 184);
+            this.Txtbox_description.Size = new System.Drawing.Size(291, 150);
             this.Txtbox_description.TabIndex = 1;
             // 
             // Txtbox_activitieName
             // 
-            this.Txtbox_activitieName.Location = new System.Drawing.Point(144, 54);
-            this.Txtbox_activitieName.Margin = new System.Windows.Forms.Padding(4);
+            this.Txtbox_activitieName.Location = new System.Drawing.Point(108, 44);
             this.Txtbox_activitieName.Name = "Txtbox_activitieName";
-            this.Txtbox_activitieName.Size = new System.Drawing.Size(347, 22);
+            this.Txtbox_activitieName.Size = new System.Drawing.Size(261, 20);
             this.Txtbox_activitieName.TabIndex = 0;
             // 
-            // EditActivities
+            // AdminEditActivities
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 433);
+            this.ClientSize = new System.Drawing.Size(514, 352);
             this.Controls.Add(this.Btn_Previous);
             this.Controls.Add(this.Btn_save);
             this.Controls.Add(this.groupBox1);
-            this.Name = "EditActivities";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "AdminEditActivities";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit Activities";
             this.groupBox1.ResumeLayout(false);

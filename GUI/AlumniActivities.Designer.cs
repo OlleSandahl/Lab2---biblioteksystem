@@ -45,6 +45,7 @@
             this.Btn_Previous.TabIndex = 21;
             this.Btn_Previous.Text = "Previous";
             this.Btn_Previous.UseVisualStyleBackColor = true;
+            this.Btn_Previous.Click += new System.EventHandler(this.Btn_Previous_Click);
             // 
             // Btn_MyActivities
             // 

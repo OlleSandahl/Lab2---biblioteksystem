@@ -60,5 +60,10 @@ namespace GUI
             //BusinessManager.c
 
         }
+
+        private void Btn_previous_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
+        }
     }
 }
