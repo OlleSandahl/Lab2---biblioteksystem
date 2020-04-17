@@ -37,25 +37,9 @@ namespace GUI
                 this.Visible = !this.Visible;
         }
 
-        private void Btn_sections_Click(object sender, EventArgs e)
-        {
-            AdminShowSection adminShowSection = new AdminShowSection();
-            this.Visible = !this.Visible;
-            if (adminShowSection.ShowDialog() == DialogResult.OK)
-                this.Visible = !this.Visible;
-        }
-
-        private void Btn_programs_Click_1(object sender, EventArgs e)
-        {
-            AdminShowProgram adminShowProgram = new AdminShowProgram();
-            this.Visible = !this.Visible;
-            if (adminShowProgram.ShowDialog() == DialogResult.OK)
-                this.Visible = !this.Visible;
-        }
-
         private void BtnLogOut_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+
         }
     }
 }
