@@ -34,7 +34,7 @@ namespace GUI
                 string email = Emai_txtbox.Text;
                 string fName = Fname_txtbox.Text;
                 string lName = Lname_txtbox.Text;
-                string alumnNumber = Snr_txtbox.Text;
+                int alumnNumber = int.Parse(Snr_txtbox.Text);
                 string persCode = Pnr_txtbox.Text;
 
                 Alumnus alumnus = new Alumnus(username, fName, lName, email, password);
