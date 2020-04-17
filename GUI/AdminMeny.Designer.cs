@@ -1,4 +1,6 @@
-﻿namespace GUI
+﻿using System;
+
+namespace GUI
 {
     partial class AdminMeny
     {
@@ -102,6 +104,11 @@
             this.Text = "Admin Meny";
             this.ResumeLayout(false);
 
+        }
+
+        private void Btn_programs_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
