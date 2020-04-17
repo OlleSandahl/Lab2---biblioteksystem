@@ -53,11 +53,17 @@ namespace GUI
 
         private void Btn_createNew_Click(object sender, EventArgs e)
         {
-            //Aktivity aktivity = new Aktivity(
-            //    Txtbox_activitieName.Text,
-            //    TxtBox_description.Text);
+            Aktivity newactivity = new Aktivity(
+                Txtbox_activitieName.Text,
+                TxtBox_description.Text);
+            BusinessManager.CreateActivity(newactivity);
 
-            //BusinessManager.c
+            
+
+        }
+
+        private void Btn_previous_Click(object sender, EventArgs e)
+        {
 
         }
     }

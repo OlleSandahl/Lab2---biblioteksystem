@@ -21,5 +21,20 @@ namespace GUI
             this.businessManager = businessManager;
             InitializeComponent();
         }
+
+        private void Btn_Activities_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_MyProfile_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

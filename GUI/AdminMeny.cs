@@ -35,5 +35,10 @@ namespace GUI
             if (adminHandleActicites.ShowDialog() == DialogResult.OK)
                 this.Visible = !this.Visible;
         }
+
+        private void BtnLogOut_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

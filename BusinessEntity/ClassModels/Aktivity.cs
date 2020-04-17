@@ -13,10 +13,15 @@ namespace BusinessEntity.ClassModels
         public string Description { get; set; }
         public bool Choose { get; set; }
 
-        public Aktivity ()
+
+        public Aktivity(string name, string Description)
         {
+            this.Name = name;
+            this.Description = Description;
             this.Alumnus = new HashSet<Alumnus>();
         }
+
+       
 
         public virtual Employee Employee { get; set; }
         public virtual ICollection<Alumnus> Alumnus { get; set; }

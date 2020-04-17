@@ -32,5 +32,10 @@ namespace GUI
             if (alumniMyActivities.ShowDialog() == DialogResult.OK)
                 this.Visible = !this.Visible;
         }
+
+        private void Btn_Previous_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
