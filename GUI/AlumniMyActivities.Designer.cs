@@ -35,32 +35,32 @@
             // 
             // Btn_previous
             // 
-            this.Btn_previous.Location = new System.Drawing.Point(636, 489);
-            this.Btn_previous.Margin = new System.Windows.Forms.Padding(4);
+            this.Btn_previous.Location = new System.Drawing.Point(477, 397);
             this.Btn_previous.Name = "Btn_previous";
-            this.Btn_previous.Size = new System.Drawing.Size(100, 28);
+            this.Btn_previous.Size = new System.Drawing.Size(75, 23);
             this.Btn_previous.TabIndex = 3;
             this.Btn_previous.Text = "Previous";
             this.Btn_previous.UseVisualStyleBackColor = true;
+            this.Btn_previous.Click += new System.EventHandler(this.Btn_previous_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 13);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(10, 11);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(723, 469);
+            this.dataGridView1.Size = new System.Drawing.Size(542, 381);
             this.dataGridView1.TabIndex = 2;
             // 
             // AlumniMyActivities
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 535);
+            this.ClientSize = new System.Drawing.Size(575, 435);
             this.Controls.Add(this.Btn_previous);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AlumniMyActivities";
             this.Text = "AlumniMyActivities";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -59,8 +59,8 @@ namespace GUI
                 MessageBox.Show("you successfully logged in");
                 if (businessManager.AlumnLogIn())
                 {
-                    AlumniMeny alumniMeny = new AlumniMeny(businessManager);
-                    alumniMeny.ShowDialog();
+                    AlumniActivities alumniActivities = new AlumniActivities(businessManager);
+                    alumniActivities.ShowDialog();
                 }
                 else
                 {

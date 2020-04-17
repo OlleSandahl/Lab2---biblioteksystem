@@ -21,10 +21,5 @@ namespace GUI
             this.businessManager = businessManager;
             InitializeComponent();
         }
-
-        private void Btn_Activities_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
