@@ -100,6 +100,7 @@
             this.Btn_search.TabIndex = 15;
             this.Btn_search.Text = "Search";
             this.Btn_search.UseVisualStyleBackColor = true;
+            this.Btn_search.Click += new System.EventHandler(this.Btn_search_Click);
             // 
             // TxtBox_SearchName
             // 

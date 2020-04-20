@@ -24,6 +24,32 @@ namespace GUI
             InitializeComponent();
         }
 
+        public void ShowAlumni()
+        {
+            UpdateDataGrid(BusinessManager.GetAlumni());
+        }
+
+        public void showAktivities()
+        {
+            UpdateDataGrid(BusinessManager.GetAktivity());
+        }
+
+        public void UpdateDataGrid(List<Alumnus> list)
+        {
+            bindingSource.DataSource = list;
+            dataGridView1.DataSource = bindingSource;
+        }
+        public void UpdateDataGrid(List<Aktivity> list)
+        {
+            bindingSource.DataSource = list;
+            dataGridView1.DataSource = bindingSource;
+        }
+        public void SearchAlumni()
+        {
+           
+        }
+
+
         private void Btn_delete_Click(object sender, EventArgs e)
         {
 
@@ -32,6 +58,11 @@ namespace GUI
         private void Btn_previous_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.OK;
+        }
+
+        private void Btn_search_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
