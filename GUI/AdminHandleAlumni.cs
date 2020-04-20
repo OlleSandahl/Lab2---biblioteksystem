@@ -7,13 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BuisnessLayer1;
+using BusinessEntity.ClassModels;
 
 namespace GUI
 {
     public partial class Admin_Handle_Alumni : Form
     {
-        public Admin_Handle_Alumni()
+        BindingSource bindingSource = new BindingSource();
+        BusinessManager BusinessManager;
+        
+
+        public Admin_Handle_Alumni(BusinessManager businessManager  )
         {
+            this.BusinessManager = businessManager;
             InitializeComponent();
         }
 

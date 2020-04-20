@@ -35,6 +35,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Txtbox_description = new System.Windows.Forms.TextBox();
             this.Txtbox_activitieName = new System.Windows.Forms.TextBox();
+            this.lblNA = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,9 +58,12 @@
             this.Btn_save.TabIndex = 4;
             this.Btn_save.Text = "Save";
             this.Btn_save.UseVisualStyleBackColor = true;
+            this.Btn_save.Click += new System.EventHandler(this.Btn_save_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.lblNA);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.Txtbox_description);
@@ -103,6 +108,24 @@
             this.Txtbox_activitieName.Size = new System.Drawing.Size(261, 20);
             this.Txtbox_activitieName.TabIndex = 0;
             // 
+            // lblNA
+            // 
+            this.lblNA.AutoSize = true;
+            this.lblNA.Location = new System.Drawing.Point(218, 16);
+            this.lblNA.Name = "lblNA";
+            this.lblNA.Size = new System.Drawing.Size(19, 13);
+            this.lblNA.TabIndex = 4;
+            this.lblNA.Text = "na";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(194, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(18, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "ID";
+            // 
             // AdminEditActivities
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -111,7 +134,7 @@
             this.Controls.Add(this.Btn_Previous);
             this.Controls.Add(this.Btn_save);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AdminEditActivities";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit Activities";
@@ -130,5 +153,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Txtbox_description;
         private System.Windows.Forms.TextBox Txtbox_activitieName;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblNA;
     }
 }

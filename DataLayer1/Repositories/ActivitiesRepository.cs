@@ -14,6 +14,14 @@ namespace DataLayer1.Repositories
 
         }
 
+
+        //public List<Aktivity> GetAllActivitiesId(int id)
+        //{
+        //    // var k = GetAll().ToList().FindAll(z =>.AktivityId == id);
+
+        //    return;
+        //}
+
     }
     //{
     //    public ActivitiesRepository(LibarysystemDBcontext context) : base(context)

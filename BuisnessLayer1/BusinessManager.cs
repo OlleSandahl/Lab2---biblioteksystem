@@ -10,7 +10,7 @@ using DataLayer1.Repositories;
 
 namespace BuisnessLayer1
 {
-    public class BusinessManager : IBusinessManager
+    public class BusinessManager 
     {
         LibarysystemDBcontext libary;
         UnitOfWork UnitOfWork;
@@ -57,12 +57,30 @@ namespace BuisnessLayer1
             }
             return alumnLogIn;
         }
-        public void UppdateAlumn(Alumnus newAlumn)
+        public void UpdateAlumn(Alumnus newAlumn)
         {
             UnitOfWork.person.Remove(logIn);
             UnitOfWork.alumnus.Add(newAlumn);
             Complete();
         }
+        public void EditActivity(int id, Aktivity Newaktivity)
+        {
+            DeleteAktivity(id);
+            CreateActivity(Newaktivity);
+            UnitOfWork.Compelte();
+
+        }
+
+        public void UpdateActivity(Aktivity aktivity, int aktivityID)
+        {
+           
+        }
+        public void CreateActivity(Aktivity Newaktivity)
+        {
+            UnitOfWork.activities.Add(Newaktivity);
+            UnitOfWork.Compelte();
+        }
+
         public List<Alumnus> GetAlumni()
         {
             return UnitOfWork.alumnus.GetAll().ToList();
@@ -72,15 +90,19 @@ namespace BuisnessLayer1
         {
             return UnitOfWork.alumnus.Get(id);
         }
-        public void CreateActivity(Aktivity NewAktivity)
-        {
-            UnitOfWork.activities.Add(NewAktivity);
-            UnitOfWork.Compelte();
-        }
+      
         public List<Aktivity> GetAktivity()
         {
             return UnitOfWork.activities.GetAll().ToList();     
         }
+
+        public void DeleteAktivity(int id)
+        {
+            Aktivity Pickedaktivity = UnitOfWork.activities.Get(id);
+            UnitOfWork.activities.Remove(Pickedaktivity);
+            UnitOfWork.Compelte();
+        }
+
 
         public void Complete()
         {

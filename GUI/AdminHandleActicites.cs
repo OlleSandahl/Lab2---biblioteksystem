@@ -23,7 +23,12 @@ namespace GUI
         {
             
             InitializeComponent();
+            ShowActivities();
             
+        }
+        public void ShowActivities()
+        {
+            UpdateDataGrid(BusinessManager.GetAktivity());
         }
 
        
@@ -42,7 +47,11 @@ namespace GUI
 
         private void Btn_edit_Click(object sender, EventArgs e)
         {
-
+            AdminEditActivities adminEditActivities = new AdminEditActivities((Aktivity)dataGridView1.CurrentRow.DataBoundItem);
+            this.Visible = !this.Visible;
+            if (adminEditActivities.ShowDialog() == DialogResult.OK)
+                this.Visible = !this.Visible;
+            GetActivites();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -69,6 +78,19 @@ namespace GUI
         private void Btn_previous_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.OK;
+        }
+
+        private void Btn_Delete_Click(object sender, EventArgs e)
+        {
+            Int32 selectedCellCount = dataGridView1.GetCellCount(DataGridViewElementStates.Selected);
+            if (selectedCellCount > 0)
+            {
+                var index = dataGridView1.CurrentCell.RowIndex;
+                DataGridViewRow selectedRow = dataGridView1.Rows[index];
+                BusinessManager.DeleteAktivity((int)selectedRow.Cells[0].Value);
+                UpdateDataGrid(BusinessManager.GetAktivity());
+
+            }
         }
     }
 }
