@@ -77,12 +77,11 @@ namespace BuisnessLayer1
             UnitOfWork.activities.Add(NewAktivity);
             UnitOfWork.Compelte();
         }
-        public Aktivity GetAktivity(int id)
+        public List<Aktivity> GetAktivity()
         {
-           return UnitOfWork.activities.Get(id);
-            
-
+            return UnitOfWork.activities.GetAll().ToList();     
         }
+
         public void Complete()
         {
             UnitOfWork.Compelte();

@@ -20,6 +20,10 @@ namespace BusinessEntity.ClassModels
             this.Description = Description;
             this.Alumnus = new HashSet<Alumnus>();
         }
+        public Aktivity()
+        {
+
+        }
 
        
 

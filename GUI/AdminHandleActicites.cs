@@ -30,7 +30,7 @@ namespace GUI
 
         public void GetActivites()
         {
-            
+            UpdateDataGrid(BusinessManager.GetAktivity());
         }
         public void UpdateDataGrid(List<Aktivity> aktivities)
         {

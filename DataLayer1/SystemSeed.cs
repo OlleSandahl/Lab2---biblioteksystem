@@ -31,7 +31,8 @@ namespace DataLayer1
             Aktivity aktivity = new Aktivity()
             {
                 AktivityId = 1,
-                Name = "Meeting"
+                Name = "Meeting",
+                Description = "discuss common goals"
             };
 
 
