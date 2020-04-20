@@ -14,7 +14,7 @@ namespace BusinessEntity.ClassModels
         public bool Choose { get; set; }
 
 
-        public Aktivity(string name, string Description)
+        public Aktivity( string name, string Description)
         {
             this.Name = name;
             this.Description = Description;

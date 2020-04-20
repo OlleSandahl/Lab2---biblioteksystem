@@ -15,19 +15,18 @@ namespace GUI
     public partial class AdminHandleActicites : Form
     {
         BindingSource BindingSource = new BindingSource();
-        BusinessManager BusinessManager = new BusinessManager();
+        BusinessManager BusinessManager;
+        
+        
 
-
-        public AdminHandleActicites( BusinessManager businessManager)
+        public AdminHandleActicites()
         {
-            this.BusinessManager = businessManager;
+            
             InitializeComponent();
             
         }
 
-        public AdminHandleActicites()
-        {
-        }
+       
 
         public void GetActivites()
         {
@@ -56,8 +55,13 @@ namespace GUI
             Aktivity newactivity = new Aktivity(
                 Txtbox_activitieName.Text,
                 TxtBox_description.Text);
+
             BusinessManager.CreateActivity(newactivity);
 
+            Txtbox_activitieName.Clear();
+            TxtBox_description.Clear();
+
+            GetActivites();
             
 
         }
