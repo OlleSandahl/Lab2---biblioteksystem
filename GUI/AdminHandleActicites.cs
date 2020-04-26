@@ -28,14 +28,14 @@ namespace GUI
         }
         public void ShowActivities()
         {
-            UpdateDataGrid(BusinessManager.GetAktivity());
+            UpdateDataGrid(BusinessManager.GetAktivities());
         }
 
        
 
         public void GetActivites()
         {
-            UpdateDataGrid(BusinessManager.GetAktivity());
+            UpdateDataGrid(BusinessManager.GetAktivities());
         }
         public void UpdateDataGrid(List<Aktivity> aktivities)
         {
@@ -88,7 +88,7 @@ namespace GUI
                 var index = dataGridView1.CurrentCell.RowIndex;
                 DataGridViewRow selectedRow = dataGridView1.Rows[index];
                 BusinessManager.DeleteAktivity((int)selectedRow.Cells[0].Value);
-                UpdateDataGrid(BusinessManager.GetAktivity());
+                UpdateDataGrid(BusinessManager.GetAktivities());
 
             }
         }

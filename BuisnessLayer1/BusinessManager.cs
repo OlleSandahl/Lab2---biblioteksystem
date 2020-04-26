@@ -91,9 +91,13 @@ namespace BuisnessLayer1
             return UnitOfWork.alumnus.Get(id);
         }
       
-        public List<Aktivity> GetAktivity()
+        public List<Aktivity> GetAktivities()
         {
             return UnitOfWork.activities.GetAll().ToList();     
+        }
+        public Aktivity GetAktivity (int id)
+        {
+            return UnitOfWork.activities.Get(id);
         }
 
         public void DeleteAktivity(int id)

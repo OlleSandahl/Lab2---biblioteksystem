@@ -98,11 +98,11 @@
     <Compile Include="AdminShowSection.Designer.cs">
       <DependentUpon>AdminShowSection.cs</DependentUpon>
     </Compile>
-    <Compile Include="AlumniMyActivities.cs">
+    <Compile Include="AlumniMyInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AlumniMyActivities.Designer.cs">
-      <DependentUpon>AlumniMyActivities.cs</DependentUpon>
+    <Compile Include="AlumniMyInfo.Designer.cs">
+      <DependentUpon>AlumniMyInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="CreateAdmin.cs">
       <SubType>Form</SubType>
@@ -152,8 +152,8 @@
     <EmbeddedResource Include="AdminShowSection.resx">
       <DependentUpon>AdminShowSection.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AlumniMyActivities.resx">
-      <DependentUpon>AlumniMyActivities.cs</DependentUpon>
+    <EmbeddedResource Include="AlumniMyInfo.resx">
+      <DependentUpon>AlumniMyInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateAdmin.resx">
       <DependentUpon>CreateAdmin.cs</DependentUpon>

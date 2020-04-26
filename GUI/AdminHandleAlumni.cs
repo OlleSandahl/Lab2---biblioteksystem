@@ -31,7 +31,7 @@ namespace GUI
 
         public void showAktivities()
         {
-            UpdateDataGrid(BusinessManager.GetAktivity());
+            UpdateDataGrid(BusinessManager.GetAktivities());
         }
 
         public void UpdateDataGrid(List<Alumnus> list)
