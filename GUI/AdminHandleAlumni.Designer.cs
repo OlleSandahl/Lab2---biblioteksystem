@@ -39,18 +39,18 @@
             this.Btn_previous = new System.Windows.Forms.Button();
             this.btnSkapaAlumn = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBoxAlumnProgram = new System.Windows.Forms.TextBox();
+            this.TxtBoxLname = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBoxAlumnLösenord = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBoxAlumnNamn = new System.Windows.Forms.TextBox();
-            this.textBoxAlumnEpost = new System.Windows.Forms.TextBox();
+            this.TxtBoxFirstName = new System.Windows.Forms.TextBox();
+            this.Txtbox_Program = new System.Windows.Forms.Label();
+            this.TxtBox_username = new System.Windows.Forms.TextBox();
+            this.TxtBoxEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBoxAlumnTelefonnummer = new System.Windows.Forms.TextBox();
+            this.TxtBoxPassWord = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxAlumnArbetsgivare = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbGodkänt = new System.Windows.Forms.CheckBox();
+            this.Cbox = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -147,6 +147,7 @@
             this.btnSkapaAlumn.TabIndex = 21;
             this.btnSkapaAlumn.Text = "Skapa Alumn";
             this.btnSkapaAlumn.UseVisualStyleBackColor = true;
+            this.btnSkapaAlumn.Click += new System.EventHandler(this.btnSkapaAlumn_Click);
             // 
             // label9
             // 
@@ -154,17 +155,17 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(38, 129);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(34, 13);
+            this.label9.Size = new System.Drawing.Size(32, 13);
             this.label9.TabIndex = 14;
-            this.label9.Text = "Epost";
+            this.label9.Text = "Email";
             // 
-            // textBoxAlumnProgram
+            // TxtBoxLname
             // 
-            this.textBoxAlumnProgram.Location = new System.Drawing.Point(150, 99);
-            this.textBoxAlumnProgram.Multiline = true;
-            this.textBoxAlumnProgram.Name = "textBoxAlumnProgram";
-            this.textBoxAlumnProgram.Size = new System.Drawing.Size(127, 20);
-            this.textBoxAlumnProgram.TabIndex = 12;
+            this.TxtBoxLname.Location = new System.Drawing.Point(150, 99);
+            this.TxtBoxLname.Multiline = true;
+            this.TxtBoxLname.Name = "TxtBoxLname";
+            this.TxtBoxLname.Size = new System.Drawing.Size(127, 20);
+            this.TxtBoxLname.TabIndex = 12;
             // 
             // label7
             // 
@@ -172,40 +173,40 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(38, 161);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 13);
+            this.label7.Size = new System.Drawing.Size(53, 13);
             this.label7.TabIndex = 15;
-            this.label7.Text = "Telefonnummer";
+            this.label7.Text = "Password";
             // 
-            // textBoxAlumnLösenord
+            // TxtBoxFirstName
             // 
-            this.textBoxAlumnLösenord.Location = new System.Drawing.Point(150, 66);
-            this.textBoxAlumnLösenord.Name = "textBoxAlumnLösenord";
-            this.textBoxAlumnLösenord.Size = new System.Drawing.Size(127, 20);
-            this.textBoxAlumnLösenord.TabIndex = 11;
+            this.TxtBoxFirstName.Location = new System.Drawing.Point(150, 66);
+            this.TxtBoxFirstName.Name = "TxtBoxFirstName";
+            this.TxtBoxFirstName.Size = new System.Drawing.Size(127, 20);
+            this.TxtBoxFirstName.TabIndex = 11;
             // 
-            // label8
+            // Txtbox_Program
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(38, 192);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 13);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Arbetsgivare";
+            this.Txtbox_Program.AutoSize = true;
+            this.Txtbox_Program.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txtbox_Program.Location = new System.Drawing.Point(38, 192);
+            this.Txtbox_Program.Name = "Txtbox_Program";
+            this.Txtbox_Program.Size = new System.Drawing.Size(46, 13);
+            this.Txtbox_Program.TabIndex = 16;
+            this.Txtbox_Program.Text = "Program";
             // 
-            // textBoxAlumnNamn
+            // TxtBox_username
             // 
-            this.textBoxAlumnNamn.Location = new System.Drawing.Point(150, 34);
-            this.textBoxAlumnNamn.Name = "textBoxAlumnNamn";
-            this.textBoxAlumnNamn.Size = new System.Drawing.Size(127, 20);
-            this.textBoxAlumnNamn.TabIndex = 9;
+            this.TxtBox_username.Location = new System.Drawing.Point(150, 34);
+            this.TxtBox_username.Name = "TxtBox_username";
+            this.TxtBox_username.Size = new System.Drawing.Size(127, 20);
+            this.TxtBox_username.TabIndex = 9;
             // 
-            // textBoxAlumnEpost
+            // TxtBoxEmail
             // 
-            this.textBoxAlumnEpost.Location = new System.Drawing.Point(150, 129);
-            this.textBoxAlumnEpost.Name = "textBoxAlumnEpost";
-            this.textBoxAlumnEpost.Size = new System.Drawing.Size(127, 20);
-            this.textBoxAlumnEpost.TabIndex = 17;
+            this.TxtBoxEmail.Location = new System.Drawing.Point(150, 129);
+            this.TxtBoxEmail.Name = "TxtBoxEmail";
+            this.TxtBoxEmail.Size = new System.Drawing.Size(127, 20);
+            this.TxtBoxEmail.TabIndex = 17;
             // 
             // label6
             // 
@@ -213,16 +214,16 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(38, 99);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 13);
+            this.label6.Size = new System.Drawing.Size(56, 13);
             this.label6.TabIndex = 7;
-            this.label6.Text = "Program";
+            this.label6.Text = "Last name";
             // 
-            // textBoxAlumnTelefonnummer
+            // TxtBoxPassWord
             // 
-            this.textBoxAlumnTelefonnummer.Location = new System.Drawing.Point(150, 161);
-            this.textBoxAlumnTelefonnummer.Name = "textBoxAlumnTelefonnummer";
-            this.textBoxAlumnTelefonnummer.Size = new System.Drawing.Size(127, 20);
-            this.textBoxAlumnTelefonnummer.TabIndex = 18;
+            this.TxtBoxPassWord.Location = new System.Drawing.Point(150, 161);
+            this.TxtBoxPassWord.Name = "TxtBoxPassWord";
+            this.TxtBoxPassWord.Size = new System.Drawing.Size(127, 20);
+            this.TxtBoxPassWord.TabIndex = 18;
             // 
             // label5
             // 
@@ -230,9 +231,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(38, 66);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 13);
+            this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Lösenord";
+            this.label5.Text = "First name";
             // 
             // textBoxAlumnArbetsgivare
             // 
@@ -247,34 +248,34 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(38, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Namn";
+            this.label2.Text = "Username";
             // 
-            // cbGodkänt
+            // Cbox
             // 
-            this.cbGodkänt.AutoSize = true;
-            this.cbGodkänt.Location = new System.Drawing.Point(62, 228);
-            this.cbGodkänt.Name = "cbGodkänt";
-            this.cbGodkänt.Size = new System.Drawing.Size(215, 17);
-            this.cbGodkänt.TabIndex = 20;
-            this.cbGodkänt.Text = "Alumn har godkänt att information lagras";
-            this.cbGodkänt.UseVisualStyleBackColor = true;
+            this.Cbox.AutoSize = true;
+            this.Cbox.Location = new System.Drawing.Point(62, 228);
+            this.Cbox.Name = "Cbox";
+            this.Cbox.Size = new System.Drawing.Size(215, 17);
+            this.Cbox.TabIndex = 20;
+            this.Cbox.Text = "Alumn har godkänt att information lagras";
+            this.Cbox.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.cbGodkänt);
+            this.groupBox1.Controls.Add(this.Cbox);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBoxAlumnArbetsgivare);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBoxAlumnTelefonnummer);
+            this.groupBox1.Controls.Add(this.TxtBoxPassWord);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBoxAlumnEpost);
-            this.groupBox1.Controls.Add(this.textBoxAlumnNamn);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBoxAlumnLösenord);
+            this.groupBox1.Controls.Add(this.TxtBoxEmail);
+            this.groupBox1.Controls.Add(this.TxtBox_username);
+            this.groupBox1.Controls.Add(this.Txtbox_Program);
+            this.groupBox1.Controls.Add(this.TxtBoxFirstName);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBoxAlumnProgram);
+            this.groupBox1.Controls.Add(this.TxtBoxLname);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Location = new System.Drawing.Point(652, 61);
             this.groupBox1.Name = "groupBox1";
@@ -324,18 +325,18 @@
         private System.Windows.Forms.Button Btn_previous;
         private System.Windows.Forms.Button btnSkapaAlumn;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBoxAlumnProgram;
+        private System.Windows.Forms.TextBox TxtBoxLname;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBoxAlumnLösenord;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBoxAlumnNamn;
-        private System.Windows.Forms.TextBox textBoxAlumnEpost;
+        private System.Windows.Forms.TextBox TxtBoxFirstName;
+        private System.Windows.Forms.Label Txtbox_Program;
+        private System.Windows.Forms.TextBox TxtBox_username;
+        private System.Windows.Forms.TextBox TxtBoxEmail;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBoxAlumnTelefonnummer;
+        private System.Windows.Forms.TextBox TxtBoxPassWord;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxAlumnArbetsgivare;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox cbGodkänt;
+        private System.Windows.Forms.CheckBox Cbox;
         private System.Windows.Forms.GroupBox groupBox1;
     }
 }

@@ -55,7 +55,7 @@ namespace GUI
                 int id = (int)selectedRow.Cells[0].Value;
                 var aktivities = businessManager.GetAktivity(id);
                 businessManager.CreateActivity(aktivities);
-                MessageBox.Show($"Du är registrerad på: {aktivities.Name}");
+                MessageBox.Show($" You are registred at: {aktivities.Name}");
                 this.Close();
             }
         }

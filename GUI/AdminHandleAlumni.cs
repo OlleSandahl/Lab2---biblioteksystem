@@ -22,6 +22,7 @@ namespace GUI
         {
             this.BusinessManager = businessManager;
             InitializeComponent();
+            
         }
 
         public void ShowAlumni()
@@ -46,12 +47,22 @@ namespace GUI
         }
         public void SearchAlumni()
         {
-           
+            string search = TxtBox_SearchName.Text;
+
         }
 
 
         private void Btn_delete_Click(object sender, EventArgs e)
         {
+            Int32 selectedCellCount = dataGridView1.GetCellCount(DataGridViewElementStates.Selected);
+            if (selectedCellCount > 0 )
+            {
+                var index = dataGridView1.CurrentCell.RowIndex;
+                DataGridViewRow selectedRow = dataGridView1.Rows[index];
+                BusinessManager.DeleteAlumnus((int)selectedRow.Cells[0].Value);
+                UpdateDataGrid(BusinessManager.GetAlumni());
+            }
+
 
         }
 
@@ -62,7 +73,34 @@ namespace GUI
 
         private void Btn_search_Click(object sender, EventArgs e)
         {
+            SearchAlumni();
+        }
 
+        private void btnSkapaAlumn_Click(object sender, EventArgs e)
+        {
+            if (Cbox.Checked)
+            {
+                Alumnus alumnus = new Alumnus(
+                    TxtBox_username.Text,
+                    TxtBoxFirstName.Text,
+                    TxtBoxLname.Text,
+                    TxtBoxEmail.Text,
+                    TxtBoxPassWord.Text);
+
+                BusinessManager.CreateAlumnus(alumnus);
+
+                TxtBox_username.Clear();
+                TxtBoxFirstName.Clear();
+                TxtBoxLname.Clear();
+                TxtBoxEmail.Clear();
+                TxtBoxPassWord.Clear();
+
+                ShowAlumni();
+            }
+            else
+            {
+                MessageBox.Show("You have not confirmed the information to be saved");
+            }
         }
     }
 }

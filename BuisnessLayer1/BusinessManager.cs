@@ -107,6 +107,23 @@ namespace BuisnessLayer1
             UnitOfWork.Compelte();
         }
 
+        public void DeleteAlumnus(int id)
+        {
+            Alumnus PickedAlumnus = UnitOfWork.alumnus.Get(id);
+            UnitOfWork.alumnus.Remove(PickedAlumnus);
+            UnitOfWork.Compelte();
+        }
+
+        public void CreateAlumnus(Alumnus alumnus)
+        {
+            UnitOfWork.alumnus.Add(alumnus);
+            UnitOfWork.Compelte();
+        }
+
+     
+
+
+
        
         
 

@@ -39,10 +39,9 @@ namespace GUI
             // 
             // Btn_programs
             // 
-            this.Btn_programs.Location = new System.Drawing.Point(157, 9);
-            this.Btn_programs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_programs.Location = new System.Drawing.Point(118, 7);
             this.Btn_programs.Name = "Btn_programs";
-            this.Btn_programs.Size = new System.Drawing.Size(141, 46);
+            this.Btn_programs.Size = new System.Drawing.Size(106, 37);
             this.Btn_programs.TabIndex = 22;
             this.Btn_programs.Text = "Show Programs";
             this.Btn_programs.UseVisualStyleBackColor = true;
@@ -50,21 +49,20 @@ namespace GUI
             // 
             // Btn_sections
             // 
-            this.Btn_sections.Location = new System.Drawing.Point(8, 9);
-            this.Btn_sections.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_sections.Location = new System.Drawing.Point(6, 7);
             this.Btn_sections.Name = "Btn_sections";
-            this.Btn_sections.Size = new System.Drawing.Size(141, 46);
+            this.Btn_sections.Size = new System.Drawing.Size(106, 37);
             this.Btn_sections.TabIndex = 21;
             this.Btn_sections.Text = "Show Sections";
             this.Btn_sections.UseVisualStyleBackColor = true;
+            this.Btn_sections.Click += new System.EventHandler(this.Btn_sections_Click);
             // 
             // BtnLogOut
             // 
             this.BtnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLogOut.Location = new System.Drawing.Point(929, 498);
-            this.BtnLogOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnLogOut.Location = new System.Drawing.Point(697, 405);
             this.BtnLogOut.Name = "BtnLogOut";
-            this.BtnLogOut.Size = new System.Drawing.Size(113, 34);
+            this.BtnLogOut.Size = new System.Drawing.Size(85, 28);
             this.BtnLogOut.TabIndex = 20;
             this.BtnLogOut.Text = "Log out";
             this.BtnLogOut.UseVisualStyleBackColor = true;
@@ -73,10 +71,9 @@ namespace GUI
             // Btn_HandleAlumni
             // 
             this.Btn_HandleAlumni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_HandleAlumni.Location = new System.Drawing.Point(649, 196);
-            this.Btn_HandleAlumni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_HandleAlumni.Location = new System.Drawing.Point(487, 159);
             this.Btn_HandleAlumni.Name = "Btn_HandleAlumni";
-            this.Btn_HandleAlumni.Size = new System.Drawing.Size(289, 126);
+            this.Btn_HandleAlumni.Size = new System.Drawing.Size(217, 102);
             this.Btn_HandleAlumni.TabIndex = 19;
             this.Btn_HandleAlumni.Text = "Handle alumni";
             this.Btn_HandleAlumni.UseVisualStyleBackColor = true;
@@ -85,10 +82,9 @@ namespace GUI
             // Btn_handleactivities
             // 
             this.Btn_handleactivities.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_handleactivities.Location = new System.Drawing.Point(91, 196);
-            this.Btn_handleactivities.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_handleactivities.Location = new System.Drawing.Point(68, 159);
             this.Btn_handleactivities.Name = "Btn_handleactivities";
-            this.Btn_handleactivities.Size = new System.Drawing.Size(289, 126);
+            this.Btn_handleactivities.Size = new System.Drawing.Size(217, 102);
             this.Btn_handleactivities.TabIndex = 18;
             this.Btn_handleactivities.Text = "Handle activities";
             this.Btn_handleactivities.UseVisualStyleBackColor = true;
@@ -96,15 +92,15 @@ namespace GUI
             // 
             // AdminMeny
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1057, 546);
+            this.ClientSize = new System.Drawing.Size(793, 444);
             this.Controls.Add(this.Btn_programs);
             this.Controls.Add(this.Btn_sections);
             this.Controls.Add(this.BtnLogOut);
             this.Controls.Add(this.Btn_HandleAlumni);
             this.Controls.Add(this.Btn_handleactivities);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AdminMeny";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin Meny";

@@ -42,5 +42,10 @@ namespace GUI
         {
 
         }
+
+        private void Btn_sections_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
