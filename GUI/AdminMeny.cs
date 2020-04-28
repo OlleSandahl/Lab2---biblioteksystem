@@ -24,7 +24,7 @@ namespace GUI
         private void Btn_HandleAlumni_Click(object sender, EventArgs e)
         {
                       
-            Admin_Handle_Alumni admin_Handle_Alumni = new Admin_Handle_Alumni();
+            Admin_Handle_Alumni admin_Handle_Alumni = new Admin_Handle_Alumni(businessManager);
             this.Visible = !this.Visible;
             if (admin_Handle_Alumni.ShowDialog() == DialogResult.OK)
                 this.Visible = !this.Visible;

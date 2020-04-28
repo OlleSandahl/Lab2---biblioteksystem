@@ -18,7 +18,7 @@ namespace GUI
         BusinessManager BusinessManager;
         
 
-        public Admin_Handle_Alumni(BusinessManager businessManager  )
+        public Admin_Handle_Alumni(BusinessManager businessManager )
         {
             this.BusinessManager = businessManager;
             InitializeComponent();
