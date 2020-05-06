@@ -26,15 +26,15 @@ namespace BuisnessLayer1
         {
             bool Login;
             int id = Convert.ToInt32(Id);
-            Employee employee = UnitOfWork.employee.Get(id);
+            Person person = UnitOfWork.person.Get(id);
             
             //bool LogIn;
             //int id = Convert.ToInt32(Id);
             //Person person = UnitOfWork.person.Get(id);
-            if (employee != null && employee.Password == pw)
+            if (person != null && person.Password == pw)
             {
                 Login = true;
-                logIn = employee;
+                logIn = person;
             }
             else
             {
