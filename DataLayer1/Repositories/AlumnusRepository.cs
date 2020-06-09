@@ -13,6 +13,21 @@ namespace DataLayer1.Repositories
         {
 
         }
+        public bool IsAlumnus(Person currentUser)
+        {
+            using (var db = new LibarysystemDBcontext())
+            {
+                if (db.Persons.OfType<Alumnus>().ToList().Where(x => x.PersonId == currentUser.PersonId).FirstOrDefault() != null)
+                {
+                    return true;
+                }
+
+                else
+                {
+                    return false;
+                }
+            }
+        }
 
         public List<Alumnus> GetAll()
         {

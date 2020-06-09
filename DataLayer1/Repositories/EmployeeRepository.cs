@@ -13,6 +13,21 @@ namespace DataLayer1.Repositories
         {
 
         }
+        public bool IsEmployee(Person currentUser)
+        {
+            using (var db = new LibarysystemDBcontext())
+            {
+                if (db.Persons.OfType<Employee>().ToList().Where(x => x.PersonId == currentUser.PersonId).FirstOrDefault() != null)
+                {
+                    return true;
+                }
+
+                else
+                {
+                    return false;
+                }
+            }
+        }
 
         public List<Employee> GetAll()
         {

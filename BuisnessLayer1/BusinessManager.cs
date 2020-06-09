@@ -135,8 +135,15 @@ namespace BuisnessLayer1
                 return new Person();
             else return null;
         }
+        public bool IsAlumnus(Person currentUser)
+        {
+            return UnitOfWork.alumnus.IsAlumnus(currentUser);
 
-
+        }
+        public bool IsEmployee(Person currentUser)
+        {
+            return UnitOfWork.employee.IsEmployee(currentUser);
+        }
 
 
         public void Complete()

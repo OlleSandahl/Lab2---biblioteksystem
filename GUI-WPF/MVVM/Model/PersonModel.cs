@@ -77,6 +77,18 @@ namespace GUI_WPF.MVVM.Model
             IMapper mapper = new MapperConfiguration(cfg => cfg.CreateMap<PersonModel, Person>()).CreateMapper();
             return mapper.Map<PersonModel>(bm.GetUser(username, password));
         }
+        public static bool IsAlumnus(PersonModel currentUser)
+        {
+            BusinessManager bm = new BusinessManager();
+            IMapper mapper = new MapperConfiguration(cfg => cfg.CreateMap<PersonModel, Person>()).CreateMapper();
+            return bm.IsAlumnus(mapper.Map<Person>(currentUser));
+        }
+        public static bool IsEmployee(PersonModel currentUser)
+        {
+            BusinessManager bm = new BusinessManager();
+            IMapper mapper = new MapperConfiguration(cfg => cfg.CreateMap<PersonModel, Person>()).CreateMapper();
+            return bm.IsEmployee(mapper.Map<Person>(currentUser));
+        }
 
         private ObservableCollection<PersonModel> person = new ObservableCollection<PersonModel>();
         public ObservableCollection<PersonModel> Person
