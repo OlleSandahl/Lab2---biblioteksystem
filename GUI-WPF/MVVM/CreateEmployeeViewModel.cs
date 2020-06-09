@@ -7,10 +7,11 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using GUI_WPF.MVVM;
+using GUI_WPF.MVVM.Model;
 
 namespace GUI_WPF.MVVM
 {
-    public class CreateEmployeeViewModel
+    public class CreateEmployeeViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         public void Changed([CallerMemberName] String propertyName = "")
@@ -44,7 +45,7 @@ namespace GUI_WPF.MVVM
 
         public void CreateEmployee()
         {
-            if (Employee.Password == VerifyPassword)
+            if (Employee.password == VerifyPassword)
             {
                 Employee.CreateEmployee();
             }

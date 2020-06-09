@@ -9,13 +9,14 @@ using BusinessEntity.ClassModels;
 using BusinessEntity;
 using System.Runtime.CompilerServices;
 using System.ComponentModel;
+using GUI_WPF.MVVM.Model;
 
 
 namespace GUI_WPF.MVVM
 {
-    class AlumnusModel : Model.PersonModel, INotifyPropertyChanged
+    class AlumnusModel : PersonModel ,INotifyPropertyChanged
     {
-        private string sNumber;
+        private string alumnusId;
 
         BusinessManager businessManager = new BusinessManager();
 
@@ -25,10 +26,10 @@ namespace GUI_WPF.MVVM
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public string SNumber
+        public string AlumnusId
         {
-            get { return sNumber; }
-            set { sNumber = value; Changed(); }
+            get { return alumnusId; }
+            set { alumnusId = value; Changed(); }
         }
 
         public void CreateAlumn()
@@ -36,8 +37,9 @@ namespace GUI_WPF.MVVM
            
             
            Alumnus alumn = new Alumnus();
-            alumn.Username = username;
-            alumn.Fname = fname;
+           alumn.AlumnusId = int.Parse(alumnusId);
+           alumn.Username = username;
+           alumn.Fname = fname;
            alumn.Lname = lname;
            alumn.Password = password;
            alumn.Email = email;

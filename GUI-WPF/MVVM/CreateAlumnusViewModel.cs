@@ -10,7 +10,7 @@ using System.Runtime.CompilerServices;
 
 namespace GUI_WPF.MVVM
 {
-    class CreateAlumnusViewModel
+    class CreateAlumnusViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         public void Changed([CallerMemberName] String propertyName = "")

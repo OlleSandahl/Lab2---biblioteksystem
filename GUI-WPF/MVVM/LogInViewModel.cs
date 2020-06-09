@@ -54,7 +54,7 @@ namespace GUI_WPF.MVVM
 
         public void Login()
         {
-            Globals.CurrentUser = PersonModel.GetUser(Person.Username, Person.Password);
+            Globals.CurrentUser = PersonModel.GetUser(Person.username, Person.password);
 
             if (Globals.CurrentUser == null)
             {

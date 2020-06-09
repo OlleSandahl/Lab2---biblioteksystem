@@ -18,5 +18,8 @@ namespace BusinessEntity.ClassModels
 
         }
 
+        public Alumnus()
+        {
+        }
     }
 }

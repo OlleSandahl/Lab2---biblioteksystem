@@ -8,12 +8,14 @@ using BusinessEntity;
 using BuisnessLayer1;
 using DataLayer1;
 using System.Runtime.CompilerServices;
+using BusinessEntity.ClassModels;
+using GUI_WPF.MVVM.Model;
 
 namespace GUI_WPF
 {
-    public class EmployeeModel : 
+    public class EmployeeModel : PersonModel ,INotifyPropertyChanged
     {
-        private string signature;
+        private string employeeId;
 
         BusinessManager businessManager = new BusinessManager();
 
@@ -23,10 +25,10 @@ namespace GUI_WPF
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public string Signature
+        public string EmployeeId
         {
-            get { return signature; }
-            set { signature = value; Changed(); }
+            get { return employeeId; }
+            set { employeeId = value; Changed(); }
         }
 
         public void CreateEmployee()
@@ -37,15 +39,15 @@ namespace GUI_WPF
             employee.Username = username;
             employee.Fname = fname;
             employee.Lname = lname;
-            employee.Signature = signature;
-            employee.PersCode = persCode;
+            employee.EmployeeId = employeeId;
+            employee.PersonCode = personCode;
 
             businessManager.CreateEmployee(employee);
         }
 
         public void GetEmployee()
         {
-            businessManager.GetEmployee(PersId);
+            businessManager.GetEmployee(personId);
         }
     }
 }

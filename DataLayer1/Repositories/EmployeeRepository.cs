@@ -28,7 +28,13 @@ namespace DataLayer1.Repositories
                 }
             }
         }
-
+        public Employee GetEmployee(int PersId)
+        {
+            using (var db = new LibarysystemDBcontext())
+            {
+                return db.Persons.OfType<Employee>().Where(x => x.PersonId == PersId).FirstOrDefault();
+            }
+        }
         public List<Employee> GetAll()
         {
             return LibarysystemDBcontext.Persons.OfType<Employee>().ToList();

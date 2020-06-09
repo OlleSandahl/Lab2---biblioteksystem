@@ -124,6 +124,12 @@ namespace BuisnessLayer1
             UnitOfWork.Compelte();
         }
 
+        public void CreateEmployee(Employee employee)
+        {
+            UnitOfWork.employee.Add(employee);
+            UnitOfWork.Compelte();
+        }
+
 
 
 
@@ -145,6 +151,10 @@ namespace BuisnessLayer1
             return UnitOfWork.employee.IsEmployee(currentUser);
         }
 
+        public Employee GetEmployee(int PersonId)
+        {
+            return UnitOfWork.employee. GetEmployee(PersonId);
+        }
 
         public void Complete()
         {

@@ -14,7 +14,7 @@ using AutoMapper;
 
 namespace GUI_WPF.MVVM.Model
 {
-    class PersonModel
+    public class PersonModel
     {
         BusinessManager BusinessManager = new BusinessManager();
 

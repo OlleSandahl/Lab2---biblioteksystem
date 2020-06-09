@@ -46,7 +46,7 @@ namespace GUI
                 alumnus.Lname = lName;
                 alumnus.Email = email;
 
-               // businessManager.CreateAlumn(alumnus);
+                businessManager.CreateAlumnus(alumnus);
                 DialogResult = DialogResult.OK;
             }
         }
