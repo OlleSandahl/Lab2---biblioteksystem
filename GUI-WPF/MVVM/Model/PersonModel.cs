@@ -76,10 +76,34 @@ namespace GUI_WPF.MVVM.Model
         {
             get { return person; }
             set { person = value; Changed(); }
-        }   
+        }
 
 
-    }
+        public static ObservableCollection<Alumnus> AlumniGet()
+        {
+            ObservableCollection<Alumnus> x = new ObservableCollection<Alumnus>();
+            foreach (var item in BusinessManager.GetAlumni())
+            {
+                Alumnus alumnus = new Alumnus()
+                {
+                    AlumnusId = item.AlumnusId,
+                                   
+                };
+
+                foreach (var car in item.Cars)
+                {
+                    person.Car.Add(new Car()
+                    {
+                        LicenseNumber = car.LicenseNumber,
+                        Color = car.Color
+                    });
+                }
+
+                x.Add(person);
+            }
+
+
+        }
 }
 
 
