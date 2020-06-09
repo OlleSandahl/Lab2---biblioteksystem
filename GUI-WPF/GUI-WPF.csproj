@@ -66,6 +66,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="EmployeeModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -74,7 +75,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MVVM\View\CreatEmployeeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\LogInView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\MainAlumnusView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\MainEmployeeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -83,14 +96,24 @@
     <Compile Include="MVVM\AlumnusModel.cs" />
     <Compile Include="MVVM\CreateAlumnusViewModel.cs" />
     <Compile Include="Globals.cs" />
+    <Compile Include="MVVM\CreateEmployeeViewModel.cs" />
     <Compile Include="MVVM\LogInViewModel.cs" />
     <Compile Include="MVVM\Model\PersonModel.cs" />
     <Compile Include="MVVM\PersonModel.cs" />
     <Compile Include="MVVM\View\CreateAlumnusView.xaml.cs">
       <DependentUpon>CreateAlumnusView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MVVM\View\CreatEmployeeView.xaml.cs">
+      <DependentUpon>CreatEmployeeView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVVM\View\LogInView.xaml.cs">
       <DependentUpon>LogInView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\MainAlumnusView.xaml.cs">
+      <DependentUpon>MainAlumnusView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\MainEmployeeView.xaml.cs">
+      <DependentUpon>MainEmployeeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
