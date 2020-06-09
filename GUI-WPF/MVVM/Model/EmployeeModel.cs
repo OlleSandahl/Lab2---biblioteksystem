@@ -11,7 +11,7 @@ using System.Runtime.CompilerServices;
 
 namespace GUI_WPF
 {
-    public class EmployeeModel
+    public class EmployeeModel : 
     {
         private string signature;
 
