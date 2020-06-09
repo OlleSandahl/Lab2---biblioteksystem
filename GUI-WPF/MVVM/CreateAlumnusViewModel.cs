@@ -10,7 +10,7 @@ using System.Runtime.CompilerServices;
 
 namespace GUI_WPF.MVVM
 {
-    class CreateAlumunusViewModel
+    class CreateAlumnusViewModel
     {
         public event PropertyChangedEventHandler PropertyChanged;
         public void Changed([CallerMemberName] String propertyName = "")
@@ -18,7 +18,7 @@ namespace GUI_WPF.MVVM
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public CreateAlumunusViewModel()
+        public CreateAlumnusViewModel()
         {
             Alumn = new ObservableCollection<AlumnusModel>();
             Alumnus = new AlumnusModel();
