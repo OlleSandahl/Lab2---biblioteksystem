@@ -20,7 +20,7 @@ namespace GUI_WPF.MVVM.View
     /// </summary>
     public partial class LogInView : Window
     {
-        LoginViewModel vm = new LoginViewModel();
+        LogInViewModel vm = new LogInViewModel();
         public LogInView()
         {
             InitializeComponent();
