@@ -9,7 +9,6 @@ using BusinessEntity.ClassModels;
 using BusinessEntity;
 using System.Runtime.CompilerServices;
 using System.ComponentModel;
-using BusinessEntity.ClassModels;
 
 
 namespace GUI_WPF.MVVM
@@ -47,7 +46,7 @@ namespace GUI_WPF.MVVM
 
         public void GetAlumn()
         {
-            businessManager.GetAlumnus(id);
+            businessManager.GetAlumnus(personId);
         }
 
         public void GetAlumns()
