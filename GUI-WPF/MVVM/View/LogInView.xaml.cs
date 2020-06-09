@@ -24,6 +24,7 @@ namespace GUI_WPF.MVVM.View
         public LogInView()
         {
             InitializeComponent();
+
             DataContext = vm;
         }
         private void Button_Click3(object sender, RoutedEventArgs e)
@@ -33,7 +34,7 @@ namespace GUI_WPF.MVVM.View
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            CreateAlumnusView createAlumnusWindow = new CreateAlumnusWindow();
+            CreateAlumnusView createAlumnusWindow = new CreateAlumnusView();
 
             createAlumnusWindow.Show();
         }

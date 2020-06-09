@@ -11,17 +11,17 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using GUI_WPF;
+using GUI_WPF.MVVM.View;
 
 namespace GUI_WPF.MVVM.View
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for CreateAlumnusView1.xaml
     /// </summary>
-    public partial class CreatAlumnusView : Window
+    public partial class CreateAlumnusView : Window
     {
-        CreateAlumunusViewModel vm = new CreateAlumunusViewModel();
-        public CreateAlumunusView()
+        CreateAlumnusViewModel vm = new CreateAlumnusViewModel();
+        public CreateAlumnusView()
         {
             InitializeComponent();
 

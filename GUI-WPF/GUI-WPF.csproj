@@ -81,7 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MVVM\AlumnusModel.cs" />
-    <Compile Include="MVVM\CreateAlumunusViewModel.cs" />
+    <Compile Include="MVVM\CreateAlumnusViewModel.cs" />
     <Compile Include="Globals.cs" />
     <Compile Include="MVVM\LogInViewModel.cs" />
     <Compile Include="MVVM\Model\PersonModel.cs" />
