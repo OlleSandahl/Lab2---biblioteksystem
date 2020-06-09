@@ -33,9 +33,8 @@ namespace GUI_WPF.MVVM
         }
 
         public void CreateAlumn()
-        {   
-           
-            
+        {
+         
            Alumnus alumn = new Alumnus();
            alumn.AlumnusId = int.Parse(alumnusId);
            alumn.Username = username;
