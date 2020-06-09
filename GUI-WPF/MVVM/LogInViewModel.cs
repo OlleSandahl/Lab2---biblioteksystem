@@ -64,16 +64,16 @@ namespace GUI_WPF.MVVM
             {
                 if (PersonModel.IsAlumnus(Globals.CurrentUser))
                 {
-                    MainAlumnusWindow mainAlumnusWindow = new MainAlumnusWindow();
+                    MainAlumnusView mainAlumnusView = new MainAlumnusView();
 
-                    mainAlumnusWindow.Show();
+                    mainAlumnusView.Show();
                 }
 
                 if (PersonModel.IsEmployee(Globals.CurrentUser))
                 {
-                    MainEmployeeWindow mainEmployeeWindow = new MainEmployeeWindow();
+                    MainEmployeeView mainEmployeeView = new MainEmployeeView();
 
-                    mainEmployeeWindow.Show();
+                    mainEmployeeView.Show();
                 }
             }
         }

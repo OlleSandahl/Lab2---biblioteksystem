@@ -124,12 +124,19 @@ namespace BuisnessLayer1
             UnitOfWork.Compelte();
         }
 
-     
 
 
 
-       
-        
+        public Person GetUser(string Username, string Password)
+        {
+            Person x = UnitOfWork.person.GetUser(Username, Password);
+
+            if (x != null)
+                return new Person();
+            else return null;
+        }
+
+
 
 
         public void Complete()

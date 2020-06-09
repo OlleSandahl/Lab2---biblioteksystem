@@ -9,8 +9,8 @@ using BusinessEntity.ClassModels;
 using BusinessEntity;
 using System.Runtime.CompilerServices;
 using System.ComponentModel;
-using BusinessEntity.ClassModels;
 using System.Collections.ObjectModel;
+using AutoMapper;
 
 namespace GUI_WPF.MVVM.Model
 {
@@ -69,6 +69,13 @@ namespace GUI_WPF.MVVM.Model
         {
             get { return Password; }
             set { Password = value; Changed(); }
+        }
+
+        public static PersonModel GetUser(string username, string password)
+        {
+            BusinessManager bm = new BusinessManager();
+            IMapper mapper = new MapperConfiguration(cfg => cfg.CreateMap<PersonModel, Person>()).CreateMapper();
+            return mapper.Map<PersonModel>(bm.GetUser(username, password));
         }
 
         private ObservableCollection<PersonModel> person = new ObservableCollection<PersonModel>();
