@@ -67,14 +67,16 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="MVVM\View\Window1.xaml">
+    <Page Include="MVVM\View\CreateAlumnusView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MVVM\View\Window1.xaml.cs">
-      <DependentUpon>Window1.xaml</DependentUpon>
+    <Compile Include="MVVM\AlumnusModel.cs" />
+    <Compile Include="MVVM\CreateAlumunusViewModel.cs" />
+    <Compile Include="MVVM\View\CreateAlumnusView.xaml.cs">
+      <DependentUpon>CreateAlumnusView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -104,6 +106,20 @@
   <ItemGroup>
     <Folder Include="MVVM\Model\" />
     <Folder Include="MVVM\ViewModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BuisnessLayer1\BuisnessLayer1.csproj">
+      <Project>{b04b3307-e2da-421c-99b2-c45b59a086ff}</Project>
+      <Name>BuisnessLayer1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessEntity\BusinessEntity.csproj">
+      <Project>{97777750-1b09-4fd9-ae8f-582dfd0309d1}</Project>
+      <Name>BusinessEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLayer1\DataLayer1.csproj">
+      <Project>{f5a668dd-cf55-488b-8256-4fbc56eccb05}</Project>
+      <Name>DataLayer1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
