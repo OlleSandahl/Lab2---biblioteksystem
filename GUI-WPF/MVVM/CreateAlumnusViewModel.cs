@@ -44,7 +44,7 @@ namespace GUI_WPF.MVVM
 
         public void CreateAlumnus()
         {
-            if (Alumnus. == VerifyPassword)
+            if (Alumnus.password == VerifyPassword)
             {
                 Alumnus.CreateAlumn();
             }
