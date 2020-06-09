@@ -99,7 +99,6 @@
     <Compile Include="MVVM\CreateEmployeeViewModel.cs" />
     <Compile Include="MVVM\LogInViewModel.cs" />
     <Compile Include="MVVM\Model\PersonModel.cs" />
-    <Compile Include="MVVM\PersonModel.cs" />
     <Compile Include="MVVM\View\CreateAlumnusView.xaml.cs">
       <DependentUpon>CreateAlumnusView.xaml</DependentUpon>
     </Compile>

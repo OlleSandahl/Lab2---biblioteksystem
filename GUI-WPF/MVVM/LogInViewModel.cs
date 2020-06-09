@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Collections.ObjectModel;
 using GUI_WPF;
 using GUI_WPF.MVVM.View;
-using GUI_WPF.MVVM;
+using GUI_WPF.MVVM.Model;
 
 namespace GUI_WPF.MVVM
 {
