@@ -17,6 +17,7 @@ namespace BusinessEntity.ClassModels
         {
 
         }
+        public Person Person { get; set; }
 
         public Alumnus()
         {

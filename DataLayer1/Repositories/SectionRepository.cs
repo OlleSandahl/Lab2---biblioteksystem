@@ -9,6 +9,13 @@ namespace DataLayer1.Repositories
 {
     public class SectionRepository : GenericRepository<Section>
     {
+        public Section GetSection(int SectionId)
+        {
+            using (var db = new LibarysystemDBcontext())
+            {
+                return db.Sections.Where(x => x.SectionId == SectionId).FirstOrDefault();
+            }
+        }
         public SectionRepository(LibarysystemDBcontext libarysystemDBcontext) : base(libarysystemDBcontext)
         {
 

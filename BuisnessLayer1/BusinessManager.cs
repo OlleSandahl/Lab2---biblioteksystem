@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,6 +9,7 @@ using DataLayer1;
 using DataLayer1.UnitOfWork;
 using BusinessEntity.ClassModels;
 using DataLayer1.Repositories;
+using System.Data.Entity;
 
 namespace BuisnessLayer1
 {
@@ -155,7 +158,25 @@ namespace BuisnessLayer1
         {
             return UnitOfWork.employee. GetEmployee(PersonId);
         }
-
+        public List<Program> GetPrograms()
+        {
+            return UnitOfWork.program.GetAll().ToList();
+        }
+        public Section GetSection(int SectionId)
+        {
+            return UnitOfWork.section.Get(SectionId);
+        }
+        public List<Section> GetSections()
+        {
+            return UnitOfWork.section.GetAll().ToList();
+        }
+        public static ObservableCollection<Person> PeopleGet()
+        {
+            var db = new LibarysystemDBcontext();
+            return new ObservableCollection<Person>(
+                db.Persons.Include(x => x.Alumnus).ToList()
+            );
+        }
         public void Complete()
         {
             UnitOfWork.Compelte();

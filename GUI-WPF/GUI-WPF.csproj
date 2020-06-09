@@ -66,6 +66,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="MVVM\Model\ActivityModel.cs" />
     <Compile Include="MVVM\Model\EmployeeModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -93,11 +94,13 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MVVM\AlumnusModel.cs" />
-    <Compile Include="MVVM\CreateAlumnusViewModel.cs" />
+    <Compile Include="MVVM\Model\AlumnusModel.cs" />
+    <Compile Include="MVVM\Model\ProgramModel.cs" />
+    <Compile Include="MVVM\Model\SectionModel.cs" />
+    <Compile Include="MVVM\ViewModel\CreateAlumnusViewModel.cs" />
     <Compile Include="Globals.cs" />
-    <Compile Include="MVVM\CreateEmployeeViewModel.cs" />
-    <Compile Include="MVVM\LogInViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\CreateEmployeeViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\LogInViewModel.cs" />
     <Compile Include="MVVM\Model\PersonModel.cs" />
     <Compile Include="MVVM\View\CreateAlumnusView.xaml.cs">
       <DependentUpon>CreateAlumnusView.xaml</DependentUpon>
@@ -114,6 +117,8 @@
     <Compile Include="MVVM\View\MainEmployeeView.xaml.cs">
       <DependentUpon>MainEmployeeView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Observers\IObserver.cs" />
+    <Compile Include="Observers\Observer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -140,9 +145,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MVVM\ViewModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\BuisnessLayer1\BuisnessLayer1.csproj">
       <Project>{b04b3307-e2da-421c-99b2-c45b59a086ff}</Project>

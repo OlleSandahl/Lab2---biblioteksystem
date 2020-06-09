@@ -24,7 +24,13 @@ namespace BusinessEntity.ClassModels
         //    this.Username = username;
         //    this.Password = password;
         //}
-        
+        public ICollection<Alumnus> Alumnus { get; set; }
+        public ICollection<Employee> Employees { get; set; }
+        public Person()
+        {
+            Alumnus = new List<Alumnus>(); 
+            Employees = new List<Employee>();
+        }
 
     }
 

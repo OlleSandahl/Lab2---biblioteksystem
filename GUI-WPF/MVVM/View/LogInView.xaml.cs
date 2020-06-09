@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using GUI_WPF.MVVM.View;
+using GUI_WPF.MVVM;
 
 namespace GUI_WPF.MVVM.View
 {
@@ -41,9 +42,9 @@ namespace GUI_WPF.MVVM.View
 
         private void Button_Click2(object sender, RoutedEventArgs e)
         {
-            CreateEmployeeWindow createEmployeeWindow = new CreateEmployeeWindow();
+            CreatEmployeeView createEmployeeView = new CreatEmployeeView();
 
-            createEmployeeWindow.Show();
+            createEmployeeView.Show();
         }
 
         private void Button_Click4(object sender, RoutedEventArgs e)

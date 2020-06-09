@@ -58,7 +58,7 @@ namespace GUI_WPF.MVVM
 
             if (Globals.CurrentUser == null)
             {
-                System.Windows.MessageBox.Show("Ogiltligt användarnamn och/eller lösenord.");
+                System.Windows.MessageBox.Show("Invalid username and / or password.");
             }
             else
             {

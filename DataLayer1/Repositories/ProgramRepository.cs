@@ -9,6 +9,13 @@ namespace DataLayer1.Repositories
 {
     public class ProgramRepository : GenericRepository<Program>
     {
+        public List<Program> GetPrograms()
+        {
+            using (var db = new LibarysystemDBcontext())
+            {
+                return db.Programs.ToList();
+            }
+        }
         public ProgramRepository(LibarysystemDBcontext libarysystemDBcontext) : base(libarysystemDBcontext)
         {
 
