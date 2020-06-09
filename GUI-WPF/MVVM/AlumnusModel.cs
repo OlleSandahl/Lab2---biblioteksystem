@@ -9,10 +9,12 @@ using BusinessEntity.ClassModels;
 using BusinessEntity;
 using System.Runtime.CompilerServices;
 using System.ComponentModel;
+using BusinessEntity.ClassModels;
+
 
 namespace GUI_WPF.MVVM
 {
-    class AlumnusModel
+    class AlumnusModel : INotifyPropertyChanged
     {
         private string sNumber;
 
@@ -32,14 +34,18 @@ namespace GUI_WPF.MVVM
 
         public void CreateAlumn()
         {
-            Alumnus alumn = new Alumnus();
+           
+            
+            
+            
+           Alumnus alumn = new Alumnus();
             alumn.Username = userName;
             alumn.Fname = fname;
-            alumn.Lname = lname;
-            alumn.Password = password;
-            alumn.Email = email;
+            //alumn.Lname = lname;
+            //alumn.Password = password;
+            //alumn.Email = email;
 
-            businessManager.CreateAlumnus(alumn);
+            //businessManager.CreateAlumnus(alumn);
         }
 
         public void GetAlumn()

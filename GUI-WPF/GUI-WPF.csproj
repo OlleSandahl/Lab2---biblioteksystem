@@ -84,6 +84,7 @@
     <Compile Include="MVVM\CreateAlumunusViewModel.cs" />
     <Compile Include="Globals.cs" />
     <Compile Include="MVVM\LogInViewModel.cs" />
+    <Compile Include="MVVM\Model\PersonModel.cs" />
     <Compile Include="MVVM\PersonModel.cs" />
     <Compile Include="MVVM\View\CreateAlumnusView.xaml.cs">
       <DependentUpon>CreateAlumnusView.xaml</DependentUpon>
@@ -118,7 +119,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="MVVM\Model\" />
     <Folder Include="MVVM\ViewModel\" />
   </ItemGroup>
   <ItemGroup>
