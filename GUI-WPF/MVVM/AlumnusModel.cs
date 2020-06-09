@@ -14,7 +14,7 @@ using BusinessEntity.ClassModels;
 
 namespace GUI_WPF.MVVM
 {
-    class AlumnusModel : INotifyPropertyChanged
+    class AlumnusModel : Model.PersonModel, INotifyPropertyChanged
     {
         private string sNumber;
 
