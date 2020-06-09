@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GUI_WPF.MVVM;
+using GUI_WPF.MVVM.Model;
 
 namespace GUI_WPF.MVVM
 {

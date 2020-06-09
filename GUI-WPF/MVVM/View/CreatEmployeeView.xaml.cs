@@ -23,7 +23,7 @@ namespace GUI_WPF.MVVM.View
         public CreatEmployeeView()
         {
             InitializeComponent();
-            
+
             DataContext = vm;
         }
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -36,3 +36,4 @@ namespace GUI_WPF.MVVM.View
 
         }
     }
+}
