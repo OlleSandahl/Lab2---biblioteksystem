@@ -8,32 +8,32 @@
         Title="MainWindow" Height="333.433" Width="300">
     <StackPanel>
         <StackPanel Width="200" HorizontalAlignment="Left">
-            <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
-                <Label>Personnummer:</Label>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Label Content="PersonCode"/>
                 <TextBox Width="100" Text="{Binding Alumnus.PersCode}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Label>S-Nummer</Label>
-                <TextBox Width="100" Text="{Binding Alumnus.SNumber}"></TextBox>
+                <Label Content="AlumnusId"/>
+                <TextBox Width="100" Text="{Binding Alumnus.AlumnusId}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Label>Förnamn</Label>
+                <Label Content="Firstname"/>
                 <TextBox Width="100" Text="{Binding Alumnus.Fname}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Label>Efternamn</Label>
+                <Label Content="Lastname"/>
                 <TextBox Width="100" Text="{Binding Alumnus.Lname}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Label>Användarnamn</Label>
+                <Label Content="Username"/>
                 <TextBox Width="100" Text="{Binding Alumnus.Username}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Label>Lösenord</Label>
+                <Label Content="Password"/>
                 <TextBox x:Name="PasswordTxtBox" Width="100" Text="{Binding Alumnus.Password}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Label>Verifiera lösenord</Label>
+                <Label Content="Verify Password"/>
                 <TextBox x:Name="VerifyPasswordTxtBox" Width="100" Text="{Binding VerifyPassword}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
@@ -41,10 +41,10 @@
                 <TextBox Width="100" Text="{Binding Alumnus.Email}"></TextBox>
             </StackPanel>
             <StackPanel>
-                <Button Content="Registrera" Click="Button_Click"></Button>
+                <Button Content="Register" Click="Button_Click"></Button>
             </StackPanel>
             <StackPanel>
-                <Button Content="Avbryt" Click="Button_Click2"></Button>
+                <Button Content="Cancel" Click="Button_Click2"></Button>
             </StackPanel>
         </StackPanel>
     </StackPanel>

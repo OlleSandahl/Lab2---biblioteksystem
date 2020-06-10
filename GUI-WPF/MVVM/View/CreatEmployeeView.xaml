@@ -9,31 +9,31 @@
     <StackPanel>
         <StackPanel Width="200" HorizontalAlignment="Left">
             <StackPanel Orientation="Horizontal">
-                <Label>Personnummer</Label>
+                <Label Content="PersonCode"/>
                 <TextBox Width="100" Text="{Binding Employee.PersCode}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Label>Signatur</Label>
-                <TextBox Width="100" Text="{Binding Employee.Signature}"></TextBox>
+                <Label Content="EmployeeId"/>
+                <TextBox Width="100" Text="{Binding Employee.EmployeeId}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Label>Förnamn</Label>
+                <Label Content="Firstname"/>
                 <TextBox Width="100" Text="{Binding Employee.Fname}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Label>Efternamn</Label>
+                <Label Content="Lastname"/>
                 <TextBox Width="100" Text="{Binding Employee.Lname}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Label>Användarnamn</Label>
+                <Label Content="Username"/>
                 <TextBox Width="100" Text="{Binding Employee.Username}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Label>Lösenord</Label>
+                <Label Content="Password"/>
                 <TextBox x:Name="PasswordTxtBox" Width="100" Text="{Binding Employee.Password}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Label>Verifiera lösenord</Label>
+                <Label Content="Verify Password"/>
                 <TextBox x:Name="VerifyPasswordTxtBox" Width="100" Text="{Binding VerifyPassword}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
@@ -41,10 +41,10 @@
                 <TextBox Width="100" Text="{Binding Employee.Email}"></TextBox>
             </StackPanel>
             <StackPanel>
-                <Button Content="Registrera" Click="Button_Click"></Button>
+                <Button Content="Register" Click="Button_Click"></Button>
             </StackPanel>
             <StackPanel>
-                <Button Content="Avbryt" Click="Button_Click_1"></Button>
+                <Button Content="Cancel" Click="Button_Click_1"></Button>
             </StackPanel>
         </StackPanel>
     </StackPanel>

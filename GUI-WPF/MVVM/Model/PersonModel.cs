@@ -90,44 +90,44 @@ namespace GUI_WPF.MVVM.Model
             return bm.IsEmployee(mapper.Map<Person>(currentUser));
         }
 
-        private ObservableCollection<PersonModel> person = new ObservableCollection<PersonModel>();
-        public ObservableCollection<PersonModel> Person
-        {
-            get { return person; }
-            set { person = value; Changed(); }
-        }
-        public static ObservableCollection<Person> GetPeople()
-        {
-            ObservableCollection<Person> x = new ObservableCollection<Person>();
-            foreach (var item in BusinessManager.PeopleGet())
-            {
-                Person person = new Person()
-                {
-                    PersonId = item.PersonId,
-                    Fname = item.Fname,
-                    Lname = item.Lname,
-                };
+        //private ObservableCollection<PersonModel> person = new ObservableCollection<PersonModel>();
+        //public ObservableCollection<PersonModel> Person
+        //{
+        //    get { return person; }
+        //    set { person = value; Changed(); }
+        //}
+        //public static ObservableCollection<Person> GetPeople()
+        //{
+        //    ObservableCollection<Person> x = new ObservableCollection<Person>();
+        //    //foreach (var item in BusinessManager.PeopleGet())
+        //    {
+        //        Person person = new Person()
+        //        {
+        //            PersonId = item.PersonId,
+        //            Fname = item.Fname,
+        //            Lname = item.Lname,
+        //        };
 
-                foreach (var Alumn in item.Alumnus)
-                {
-                    person.Alumnus.Add(new Alumnus()
-                    {
-                        AlumnusId = Alumn.AlumnusId
-                    });
-                }
-                foreach (var Employee in item.Employees)
-                {
-                    person.Employees.Add(new Employee()
-                    {
-                        EmployeeId = Employee.EmployeeId
-                    });
-                }
+        //        foreach (var Alumn in item.Alumnus)
+        //        {
+        //            person.Alumnus.Add(new Alumnus()
+        //            {
+        //                AlumnusId = Alumn.AlumnusId
+        //            });
+        //        }
+        //        foreach (var Employee in item.Employees)
+        //        {
+        //            person.Employees.Add(new Employee()
+        //            {
+        //                EmployeeId = Employee.EmployeeId
+        //            });
+        //        }
 
-                x.Add(person);
-            }
+        //        x.Add(person);
+        //    }
 
-            return x;
-        }
+        //    return x;
+        //}
 
     }
 }

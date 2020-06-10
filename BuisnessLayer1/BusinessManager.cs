@@ -170,13 +170,13 @@ namespace BuisnessLayer1
         {
             return UnitOfWork.section.GetAll().ToList();
         }
-        public static ObservableCollection<Person> PeopleGet()
-        {
-            var db = new LibarysystemDBcontext();
-            return new ObservableCollection<Person>(
-                db.Persons.Include(x => x.Alumnus).ToList()
-            );
-        }
+        //public static ObservableCollection<Person> PeopleGet()
+        //{
+        //    var db = new LibarysystemDBcontext();
+        //    return new ObservableCollection<Person>(
+        //        db.Persons.Include(x => x.Alumnus).ToList()
+        //    );
+        //}
         public void Complete()
         {
             UnitOfWork.Compelte();

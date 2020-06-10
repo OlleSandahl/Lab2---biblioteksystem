@@ -9,7 +9,7 @@
     <StackPanel>
         <StackPanel Orientation="Horizontal">
             <StackPanel HorizontalAlignment="Right">
-                <Label>Inloggad som: Employee</Label>
+                <Label Content="logged in as: Employee"/>
             </StackPanel>
         </StackPanel>
     </StackPanel>

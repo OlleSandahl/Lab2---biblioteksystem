@@ -9,24 +9,24 @@
     <StackPanel>
         <StackPanel Width="200" HorizontalAlignment="Center">
             <StackPanel Orientation="Horizontal">
-                <Label>Användarnamn</Label>
+                <Label Content="Username"/>
                 <TextBox Width="100" Text="{Binding Person.Username}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Label>Lösenord</Label>
+                <Label Content="Password"/>
                 <TextBox Width="100" Text="{Binding Person.Password}"></TextBox>
             </StackPanel>
             <StackPanel>
-                <Button Content="Logga in" Click="Button_Click4"></Button>
+                <Button Content="Sign in" Click="Button_Click4"></Button>
             </StackPanel>
             <StackPanel>
-                <Button Content="Skapa Alumn" Click="Button_Click"></Button>
+                <Button Content="CreateAlumn" Click="Button_Click"></Button>
             </StackPanel>
             <StackPanel>
-                <Button Content="Skapa Anställd" Click="Button_Click2"></Button>
+                <Button Content="Create Employee" Click="Button_Click2"></Button>
             </StackPanel>
             <StackPanel>
-                <Button Content="Avsluta" Click="Button_Click3" Height="21"></Button>
+                <Button Content="Close" Click="Button_Click3" Height="21"></Button>
             </StackPanel>
         </StackPanel>
     </StackPanel>

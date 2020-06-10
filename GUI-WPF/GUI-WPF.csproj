@@ -118,7 +118,9 @@
       <DependentUpon>MainEmployeeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Observers\IObserver.cs" />
+    <Compile Include="Observers\ISubject.cs" />
     <Compile Include="Observers\Observer.cs" />
+    <Compile Include="Observers\Subject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
